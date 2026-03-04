@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turbo Sports & Performance — Collingwood</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>@font-face{font-family:'BNCyther';src:url('fonts/bncyther.otf') format('opentype');font-weight:normal;font-style:normal;font-display:swap}:root{--forest:#053117;--sage:#3B634C;--sage2:#508767;--apple:#AAEBAC;--apple-d:#8FD492;--terra:#200107;--merlot:#2D000F;--sky:#6EA3EC;--ground:#9F9D9A;--fog:#D1CEDB;--cloud:#FFFFFF;--cream:#F0EEE6;--card:#E8E5DC;--ink:#030E06;--fhero:'BNCyther',sans-serif;--fh:'Barlow Condensed',sans-serif;--fb:'Barlow',sans-serif;--max:1280px;--gap:clamp(20px,5vw,80px);--r:16px}*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{font-size:16px;scroll-behavior:smooth}body{font-family:var(--fb);background:var(--cream);color:var(--forest);-webkit-font-smoothing:antialiased;overflow-x:hidden}img{display:block;max-width:100%}a{text-decoration:none;color:inherit}button{font-family:inherit;cursor:pointer;border:none;background:none}.page{display:none}.page.active{display:block}.w{max-width:var(--max);margin:0 auto;padding:0 var(--gap)}.sec{padding:clamp(64px,8vw,112px) 0}.sec-sm{padding:clamp(40px,5vw,64px) 0}.bg-white{background:var(--cloud)}.bg-cream{background:var(--cream)}.bg-dark{background:var(--forest)}.bg-ink{background:var(--ink)}.bg-card{background:var(--card)}.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--sage2);margin-bottom:16px}.eyebrow::before{content:'';width:20px;height:2px;background:var(--apple);border-radius:2px;flex-shrink:0}.eyebrow.light{color:var(--apple)}.eyebrow.light::before{background:var(--apple)}.h-xl{font-family:var(--fhero);font-weight:900;font-size:clamp(32px,5.2vw,68px);line-height:.92;letter-spacing:.03em;text-transform:uppercase;color:var(--cloud)}.h-lg{font-family:var(--fh);font-weight:900;font-size:clamp(32px,4.5vw,64px);line-height:.94;letter-spacing:.025em;text-transform:uppercase;color:var(--forest)}.h-lg.light{color:var(--cloud)}.h-md{font-family:var(--fh);font-weight:900;font-size:clamp(28px,3.2vw,48px);line-height:.95;letter-spacing:.03em;text-transform:uppercase;color:var(--forest)}.h-md.light{color:var(--cloud)}.body-text{font-family:var(--fb);font-size:clamp(14px,1.2vw,17px);line-height:1.72;color:var(--sage)}.body-text.light{color:rgba(255,255,255,.62)}.body-text.lg{font-size:clamp(15px,1.4vw,18px)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:14px 32px;border-radius:100px;font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;cursor:pointer;border:none;white-space:nowrap;transition:background .18s,border-color .18s,color .18s,transform .1s}.btn:active{transform:scale(.97)}.btn-lg{padding:17px 40px;font-size:14px}.btn-w{width:100%}.btn-apple{background:var(--apple);color:var(--forest)}.btn-apple:hover{background:var(--apple-d)}.btn-forest{background:var(--forest);color:var(--cloud)}.btn-forest:hover{background:var(--sage)}.btn-outline{background:transparent;color:var(--forest);border:2px solid var(--forest)}.btn-outline:hover{background:var(--forest);color:var(--cloud)}.btn-ghost-light{background:transparent;color:var(--cloud);border:2px solid rgba(255,255,255,.4)}.btn-ghost-light:hover{border-color:var(--cloud);background:rgba(255,255,255,.08)}.topbar{background:var(--forest);color:var(--cloud);padding:8px var(--gap);text-align:center;font-family:var(--fb);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;line-height:1;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}.topbar-btn{background:rgba(197,251,114,.15);color:#c5fb72;border:1px solid rgba(197,251,114,.25);padding:5px 14px;border-radius:100px;font-family:var(--fb);font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:all .25s;white-space:nowrap}.topbar-btn:hover{background:#c5fb72;color:var(--forest);padding:5px 20px}.topbar a{color:var(--apple)}.topbar a:hover{text-decoration:underline}.nav{position:sticky;top:0;z-index:200;background:var(--cloud);border-bottom:1px solid rgba(5,49,23,.08);height:66px}.nav-inner{max-width:var(--max);margin:0 auto;padding:0 var(--gap);height:100%;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav-logo{display:flex;align-items:center;gap:10px;cursor:pointer;flex-shrink:0}.nav-wordmark{font-family:var(--fh);font-weight:900;font-size:22px;letter-spacing:.12em;text-transform:uppercase;color:var(--forest);line-height:1}.nav-sub{font-family:var(--fb);font-size:9px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--sage2);margin-top:1px}.nav-links{display:flex;align-items:center;gap:2px;flex:1;justify-content:center}.nav-link{font-family:var(--fb);font-size:13px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--forest);padding:8px 16px;border-radius:8px;cursor:pointer;opacity:.65;transition:opacity .15s,background .15s}.nav-link:hover{opacity:1;background:rgba(5,49,23,.05)}.nav-link.active{opacity:1;background:rgba(5,49,23,.05)}.gym-book-bar{position:fixed;bottom:0;left:0;right:0;z-index:300;background:var(--forest);padding:12px var(--gap);display:none;align-items:center;justify-content:center;gap:16px;box-shadow:0 -4px 24px rgba(0,0,0,.2)}.gym-book-bar.visible{display:flex}.gym-book-bar-text{font-family:var(--fh);font-weight:800;font-size:clamp(14px,1.6vw,18px);text-transform:uppercase;letter-spacing:.06em;color:var(--cloud)}.gym-book-bar .btn{padding:10px 28px;font-size:12px}.nav-drop{position:relative}.nav-drop-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%);min-width:160px;background:var(--cloud);border:1px solid rgba(5,49,23,.08);border-radius:12px;padding:6px 0;box-shadow:0 8px 24px rgba(0,0,0,.1);opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s;z-index:210}.nav-drop:hover .nav-drop-menu{opacity:1;visibility:visible}.nav-drop-link{display:block;padding:10px 20px;font-family:var(--fb);font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--forest);transition:background .15s;text-decoration:none;white-space:nowrap}.nav-drop-link:hover{background:rgba(5,49,23,.05)}.nav-actions{display:flex;align-items:center;gap:10px;flex-shrink:0}.nav-book{background:var(--apple);color:var(--forest);padding:9px 22px;border-radius:100px;font-family:var(--fb);font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;cursor:pointer;transition:background .15s;border:none}.nav-book:hover{background:var(--apple-d)}.nav-burger{display:none;flex-direction:column;gap:5px;width:42px;height:42px;border-radius:50%;background:var(--forest);align-items:center;justify-content:center;cursor:pointer;flex-shrink:0}.nav-burger span{display:block;width:16px;height:2px;background:var(--cloud);border-radius:2px}.mob-menu{display:none;position:fixed;inset:0;z-index:500;background:var(--cloud);flex-direction:column;padding:24px var(--gap) 48px;overflow-y:auto}.mob-menu.open{display:flex}.mob-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:56px}.mob-close{width:42px;height:42px;border-radius:50%;background:rgba(5,49,23,.08);color:var(--forest);font-size:18px;display:flex;align-items:center;justify-content:center}.mob-nav{flex:1;display:flex;flex-direction:column;gap:4px}.mob-item{font-family:var(--fh);font-weight:900;font-size:clamp(48px,13vw,72px);text-transform:uppercase;letter-spacing:.02em;color:var(--forest);line-height:1.05;cursor:pointer;transition:color .15s;background:none;border:none;text-align:left}.mob-item:hover{color:var(--sage)}.mob-sub-item{font-family:var(--fb);font-weight:700;font-size:clamp(16px,4vw,20px);text-transform:uppercase;letter-spacing:.08em;color:var(--sage2);padding-left:8px;cursor:pointer;transition:color .15s;text-decoration:none;margin-top:-2px;display:block}.mob-sub-item:hover{color:var(--forest)}.mob-foot{margin-top:40px;padding-top:28px;border-top:1px solid rgba(5,49,23,.08);display:flex;flex-direction:column;gap:16px}.ph{background:var(--forest);position:relative;overflow:hidden;padding:clamp(72px,9vw,120px) var(--gap) clamp(56px,7vw,96px)}.ph::before{content:'';position:absolute;inset:0;background:url("images/bg-overlay.jpg") center/cover no-repeat;pointer-events:none}.ph::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(3,14,6,.55) 0%,rgba(3,14,6,.35) 40%,rgba(5,49,23,.82) 100%);pointer-events:none}.ph::before{content:'';position:absolute;top:-80px;right:-80px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(170,235,172,.07) 0%,transparent 65%);pointer-events:none}.ph-wm{position:absolute;bottom:-8%;right:-2%;opacity:.08;pointer-events:none;width:clamp(260px,36vw,520px);z-index:2}.ph-inner{max-width:var(--max);margin:0 auto;position:relative;z-index:1}.sc{display:grid;grid-template-columns:5fr 6fr;background:var(--card);border-radius:24px;overflow:hidden;border:1px solid rgba(5,49,23,.07);margin-bottom:20px;transition:box-shadow .25s}.sc:hover{box-shadow:0 20px 64px rgba(5,49,23,.12)}.sc.flip{direction:rtl}.sc.flip>*{direction:ltr}.sc-img{position:relative;min-height:clamp(300px,34vw,500px);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px 24px 24px;overflow:hidden}.sc-bg{position:absolute;inset:0;background-size:cover;background-position:center}.sc-bg::after{position:absolute;inset:0;z-index:0;pointer-events:none}.turf .sc-bg{background:linear-gradient(145deg,#081e10 0%,#102a18 55%,#060f09 100%)}.gym .sc-bg{background:linear-gradient(145deg,#1a1508 0%,#261d0a 55%,#120e05 100%)}.studio.sc-bg{background:linear-gradient(145deg,#08101a 0%,#101826 55%,#060810 100%)}.flex .sc-bg{background:linear-gradient(145deg,#160c16 0%,#201420 55%,#0e080e 100%)}.vendor.sc-bg{background:linear-gradient(145deg,#081e10 0%,#102a18 55%,#060f09 100%)}.sc-img.turf .sc-bg{background:url("images/bg-turf.jpg") center/contain no-repeat;background-color:#081e10}.sc-img.turf .sc-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(3,14,6,0.72) 0%,rgba(5,49,23,0.45) 100%)}.sc-img.gym .sc-bg{background:linear-gradient(145deg,#1a1508 0%,#261d0a 55%,#120e05 100%)}.sc-img.studio .sc-bg{background:url("images/bg-studio.jpg") center/contain no-repeat;background-color:#08101a}.sc-img.studio .sc-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(3,14,6,0.68) 0%,rgba(10,20,30,0.5) 100%)}.sc-img.flex .sc-bg{background:url("images/bg-flex.jpg") center/contain no-repeat;background-color:#160c16}.sc-img.flex .sc-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(3,14,6,0.72) 0%,rgba(20,8,20,0.5) 100%)}.sc-img.vendor .sc-bg{background:url("images/bg-vendor.jpg") center/contain no-repeat;background-color:#1c1006}.sc-img.vendor .sc-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(3,14,6,0.75) 0%,rgba(5,49,23,0.55) 100%)}.sc-tags-top{display:flex;flex-wrap:wrap;gap:7px;position:absolute;top:20px;left:24px;z-index:3}.sctag{display:inline-flex;align-items:center;gap:5px;background:#c5fb72;color:#111;padding:5px 13px;border-radius:100px;font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;border:1px solid rgba(255,255,255,.5);transition:transform .2s,box-shadow .2s;cursor:default}.sctag:hover{transform:translateY(-3px);box-shadow:0 4px 12px rgba(0,0,0,.15)}.sctag::before{content:'✓';font-size:12px;font-weight:700}.sc-title{font-family:var(--fhero);font-weight:normal;font-size:clamp(22px,3.2vw,38px);color:var(--cloud);text-transform:uppercase;line-height:.93;letter-spacing:.03em;position:relative;z-index:3;text-align:center;width:100%;padding:0 16px;word-break:break-word;overflow-wrap:break-word}.sc-body{padding:clamp(28px,3.5vw,52px) clamp(24px,4vw,56px);display:flex;flex-direction:column;justify-content:center}.sc-h3{font-family:var(--fh);font-weight:900;font-size:clamp(22px,2.6vw,32px);letter-spacing:.03em;text-transform:uppercase;color:var(--forest);margin-bottom:12px;line-height:1.05}.sc-desc{font-size:14px;line-height:1.7;color:var(--sage);margin-bottom:28px}.feats{display:flex;flex-direction:column;margin-bottom:32px}.feat{padding:12px 0;border-bottom:1px solid rgba(5,49,23,.08)}.feat:last-child{border-bottom:none}.feat-row{display:flex;align-items:center;gap:9px;margin-bottom:4px}.fdot{width:7px;height:7px;border-radius:50%;background:var(--apple);flex-shrink:0}.fname{font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--forest);flex:1}.fline{flex:1;height:1px;background:rgba(5,49,23,.1)}.fdesc{font-size:13px;line-height:1.6;color:var(--sage);padding-left:16px}.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.pcard{background:var(--card);border-radius:20px;padding:32px 24px;border:1px solid rgba(5,49,23,.15);display:flex;flex-direction:column;gap:6px}.pcard.dark-c{background:var(--forest);border:1px solid rgba(255,255,255,.15)}.pcard.feat-c{background:var(--apple);border:1px solid rgba(5,49,23,.12)}.pc-name{font-family:var(--fh);font-weight:900;font-size:22px;letter-spacing:.06em;text-transform:uppercase;color:var(--forest)}.pcard.dark-c .pc-name{color:var(--cloud)}.pcard.feat-c .pc-name{color:var(--forest)}.pc-sub{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--sage2);margin-bottom:8px}.pcard.dark-c .pc-sub{color:rgba(255,255,255,.5)}.pc-price{font-family:var(--fh);font-weight:900;font-size:clamp(44px,5vw,64px);line-height:1;color:var(--apple);letter-spacing:.02em}.pcard.feat-c .pc-price{color:var(--forest)}.pc-period{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--sage2);margin-bottom:16px}.pcard.dark-c .pc-period{color:rgba(255,255,255,.4)}.pc-feats{list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:24px;flex:1}.pc-feats li{font-size:13px;color:var(--sage);padding-left:14px;position:relative;line-height:1.5}.pc-feats li::before{content:'—';position:absolute;left:0;color:var(--apple);font-weight:700}.pcard.dark-c .pc-feats li{color:rgba(255,255,255,.6)}.pcard.dark-c .pc-feats li::before,.pcard.feat-c .pc-feats li::before{color:var(--forest)}.mem-grid{display:flex;flex-direction:column;gap:14px}.mem-card{background:var(--card);border-radius:20px;padding:28px;border:1px solid rgba(5,49,23,.08)}.mem-card.dark-c{background:var(--forest);border-color:transparent}.mem-badge{display:inline-block;background:var(--apple);color:var(--forest);padding:3px 12px;border-radius:100px;font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}.ctaband{padding:clamp(48px,6vw,80px) var(--gap)}.ctaband-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap}.ctaband h2{font-family:var(--fh);font-weight:900;font-size:clamp(28px,4vw,52px);text-transform:uppercase;letter-spacing:.02em;line-height:.93}.ctaband-btns{display:flex;gap:12px;flex-wrap:wrap}.hero{position:relative;overflow:hidden;background:var(--ink);min-height:min(92vh,900px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.hero-atmosphere{position:absolute;inset:0;pointer-events:none;background:url("images/bg-overlay.jpg") center/cover no-repeat}.hero-atmosphere::before{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(3,14,6,0.55) 0%,rgba(3,14,6,0.35) 40%,rgba(5,49,23,0.82) 100%)}.hero-chevron-wm{position:absolute;bottom:-8%;right:-3%;opacity:.07;pointer-events:none;width:clamp(300px,45vw,600px)}.hero-content{position:relative;z-index:2;padding:100px var(--gap) 80px;max-width:900px;width:100%;text-align:center}.hero-eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--apple);margin-bottom:28px}.hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:24px;height:1.5px;background:var(--apple);border-radius:2px;opacity:.7}.hero-title{margin-bottom:24px}.hero-body{font-size:clamp(15px,1.4vw,18px);line-height:1.65;color:rgba(255,255,255,.55);max-width:540px;margin:0 auto 40px}.hero-btns{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:80px}.hero-partners{border-top:1px solid rgba(255,255,255,.1);padding-top:36px;text-align:center}.hero-partners-label{font-size:10px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:20px}.hero-partners-logos{display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap}.partner-logo-img{height:28px;width:auto;opacity:.6;filter:saturate(0) brightness(0) invert(1);transition:opacity .2s}.partner-logo-img:hover{opacity:.75}.marquee{background:var(--cloud);padding:22px 0;overflow:hidden;white-space:nowrap;border-top:1px solid rgba(5,49,23,.06);border-bottom:1px solid rgba(5,49,23,.06)}.marquee-track{display:flex;align-items:center;gap:28px;animation:marqueeScroll 40s linear infinite}.marquee-item{font-family:var(--fh);font-weight:700;font-size:clamp(18px,2.2vw,30px);font-style:italic;text-transform:uppercase;letter-spacing:.04em;color:var(--forest);flex-shrink:0}.marquee-logo{display:inline-block;width:clamp(24px,2.5vw,36px);height:clamp(11px,1.2vw,16px);background:url('images/icon-chevron.png') center/contain no-repeat;flex-shrink:0}@keyframes marqueeScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}@keyframes scroll-marquee{to{transform:translateX(-50%)}}.welcome-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,100px);align-items:center}.welcome-tagline{font-family:var(--fhero);font-weight:normal;font-size:clamp(40px,5.5vw,72px);line-height:.92;letter-spacing:.02em;text-transform:uppercase;color:var(--forest);margin-bottom:28px}.welcome-tagline span{color:var(--apple);display:block}.pillars-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.pillar-card:hover{transform:translateY(-6px);box-shadow:0 16px 48px rgba(5,49,23,.12)}.pillar-card{background:var(--cloud);border-radius:20px;padding:32px 28px 36px;border:1px solid rgba(5,49,23,.07);cursor:pointer;transition:transform .25s,box-shadow .25s}.pillar-card:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(5,49,23,.1)}.pillar-icon-wrap{display:inline-flex;align-items:center;justify-content:center;background:#c5fb72;border-radius:100px;width:96px;height:60px;margin:0 auto 20px;font-size:20px}.pillar-name{font-family:var(--fhero);font-weight:900;font-size:26px;letter-spacing:.1em;text-transform:uppercase;color:var(--forest);margin-bottom:10px}.pillar-desc{font-size:13px;line-height:1.65;color:var(--sage)}.fitness-section{background:var(--forest)}.fitness-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,96px);align-items:center}.fitness-photos{display:grid;grid-template-columns:1fr 1fr;gap:10px}.fitness-photo{border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:rgba(255,255,255,.05)}.fitness-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}.fitness-photo:hover img{transform:scale(1.03)}.fitness-photo.tall{grid-row:span 2;aspect-ratio:auto}.fitness-btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:36px}.reset-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,96px);align-items:center}.reset-card{background:var(--forest);border-radius:24px;padding:clamp(40px,5vw,72px) clamp(32px,4vw,64px);text-align:center;position:relative;overflow:hidden}.reset-card::before{content:'';position:absolute;bottom:-60px;right:-60px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(170,235,172,.08) 0%,transparent 70%)}.reset-card-eyebrow{font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--apple);margin-bottom:10px;font-style:italic}.reset-card-title{font-family:var(--fh);font-weight:900;font-size:clamp(52px,7vw,88px);line-height:.88;letter-spacing:.03em;text-transform:uppercase;color:var(--cloud);margin-bottom:8px}.reset-card-sub{font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--apple);opacity:.7}.reset-wm{position:absolute;bottom:20px;right:24px;opacity:.18;width:140px}.reset-wm svg{width:64px}.reset-card-lt{background:var(--card);border-radius:24px;padding:clamp(36px,4vw,60px);text-align:center;border:1px solid rgba(5,49,23,.07)}.reset-card-lt .reset-card-title{color:var(--forest)}.faq-layout{display:grid;grid-template-columns:1fr 1.8fr;gap:clamp(40px,7vw,112px);align-items:start}.faq-list{display:flex;flex-direction:column}.faq-item{border-bottom:1px solid rgba(5,49,23,.08)}.faq-btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0;background:none;border:none;text-align:left;cursor:pointer;font-family:var(--fh);font-weight:900;font-size:clamp(17px,1.8vw,22px);letter-spacing:.04em;text-transform:uppercase;color:var(--forest);transition:color .15s}.faq-btn:hover{color:var(--sage)}.faq-icon{width:28px;height:28px;border-radius:50%;background:var(--apple);color:var(--forest);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;flex-shrink:0;transition:transform .3s}.faq-item.open .faq-icon{transform:rotate(45deg)}.faq-answer{max-height:0;overflow:hidden;transition:max-height .38s cubic-bezier(.4,0,.2,1),padding-bottom .38s;font-size:14px;line-height:1.78;color:var(--sage)}.faq-item.open .faq-answer{max-height:600px;padding-bottom:22px}.faq-facility-item{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid rgba(5,49,23,.06);font-size:13px}.faq-facility-item:last-child{border-bottom:none}.faq-facility-dot{width:6px;height:6px;border-radius:50%;background:var(--apple);flex-shrink:0;margin-top:5px}.faq-facility-name{font-family:var(--fh);font-weight:800;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--forest);margin-bottom:2px}.faq-facility-specs{font-size:11px;color:var(--sage2);font-weight:600;letter-spacing:.06em;margin-bottom:3px}.faq-facility-desc{font-size:13px;color:var(--sage);line-height:1.55}.ig-header{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:32px;flex-wrap:wrap}.ig-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:1fr 1fr;gap:10px;height:clamp(380px,42vw,600px)}.ig-tile{border-radius:14px;overflow:hidden;background:rgba(255,255,255,.05);position:relative;cursor:pointer}.ig-tile.large{grid-row:span 2}.ig-tile img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s,opacity .3s;opacity:.85}.ig-tile:hover img{transform:scale(1.04);opacity:1}.ig-tile-overlay{position:absolute;inset:0;background:rgba(3,14,6,.55);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .25s}.ig-tile:hover .ig-tile-overlay{opacity:1}.contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:clamp(40px,6vw,96px);align-items:start}.contact-info-card{background:var(--forest);border-radius:20px;padding:32px 28px;margin-bottom:14px}.contact-info-card.light{background:var(--card);border:1px solid rgba(5,49,23,.08)}.cic-label{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--apple);margin-bottom:8px}.contact-info-card.light .cic-label{color:var(--sage2)}.cic-name{font-family:var(--fh);font-weight:900;font-size:clamp(22px,2.5vw,30px);text-transform:uppercase;letter-spacing:.03em;color:var(--cloud);margin-bottom:6px}.contact-info-card.light .cic-name{color:var(--forest)}.cic-addr{font-size:13px;color:rgba(255,255,255,.55);line-height:1.65}.contact-info-card.light .cic-addr{color:var(--sage)}.form-field{margin-bottom:16px}.field-label{display:block;margin-bottom:8px;font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--forest)}.field-input,.field-textarea,.field-select{width:100%;padding:14px 20px;background:var(--cloud);border:1.5px solid rgba(5,49,23,.12);border-radius:100px;font-family:var(--fb);font-size:14px;color:var(--forest);outline:none;transition:border-color .18s;appearance:none}.field-input:focus,.field-textarea:focus,.field-select:focus{border-color:var(--sage2)}.field-input::placeholder,.field-textarea::placeholder{color:rgba(5,49,23,.28)}.field-textarea{border-radius:16px;resize:vertical;min-height:130px}.field-select{border-radius:100px;cursor:pointer}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.form-success{display:none;margin-top:20px;padding:20px 24px;background:rgba(170,235,172,.12);border:1px solid rgba(170,235,172,.4);border-radius:14px}.form-success-title{font-family:var(--fh);font-size:20px;font-weight:900;letter-spacing:.04em;text-transform:uppercase;color:var(--forest);margin-bottom:4px}.form-success-body{font-size:13px;color:var(--sage)}.site-footer{background:var(--ink);padding:clamp(56px,7vw,96px) var(--gap) 40px}.footer-inner{max-width:var(--max);margin:0 auto}.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:clamp(32px,4vw,64px);padding-bottom:clamp(40px,5vw,64px);border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:32px}.footer-brand-name{font-family:var(--fh);font-weight:900;font-size:22px;letter-spacing:.12em;text-transform:uppercase;color:var(--cloud);margin-bottom:2px}.footer-brand-sub{font-size:9px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:18px}.footer-brand-desc{font-size:13px;color:rgba(255,255,255,.42);line-height:1.65;max-width:280px}.footer-col-title{font-size:9px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:18px}.footer-links{display:flex;flex-direction:column;gap:10px}.footer-link{font-size:14px;color:rgba(255,255,255,.5);cursor:pointer;transition:color .15s}.footer-link:hover{color:var(--apple)}.footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.footer-copy{font-size:11px;color:rgba(255,255,255,.2)}.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:none}.reveal-d1{transition-delay:.08s}.reveal-d2{transition-delay:.16s}.reveal-d3{transition-delay:.24s}.reveal-d4{transition-delay:.32s}@media(max-width:1100px){.welcome-grid,.fitness-grid,.reset-grid,.contact-grid{grid-template-columns:1fr;gap:48px}.pillars-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.footer-top{grid-template-columns:1fr 1fr}.faq-layout{grid-template-columns:1fr;gap:48px}.price-grid{grid-template-columns:1fr 1fr}.sc{grid-template-columns:1fr}.sc.flip{direction:ltr}.sc.flip>*{direction:ltr}.sc-img{min-height:260px}}@media(max-width:768px){.nav-links,.nav-actions{display:none}.nav-burger{display:flex}.ig-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto;height:auto}.ig-tile.large{grid-row:span 1}.pillars-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.footer-top{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}.form-row{grid-template-columns:1fr}.fitness-photos{grid-template-columns:1fr 1fr}.fitness-photo.tall{grid-row:span 1}.price-grid{grid-template-columns:1fr}.ctaband-inner{flex-direction:column;text-align:center}}@media(max-width:480px){.hero-btns{flex-direction:column;align-items:stretch}.hero-btns .btn{width:100%}.pillars-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.pillar-card:hover{transform:translateY(-6px);box-shadow:0 16px 48px rgba(5,49,23,.12)}.pillar-card{background:var(--cloud);border-radius:20px;padding:32px 28px 36px;border:1px solid rgba(5,49,23,.07);cursor:pointer;transition:transform .25s,box-shadow .25s}}.fitness-photo{position:relative;overflow:hidden;border-radius:14px}.fitness-photo-icon{display:none;transition:opacity .3s,transform .3s}.space-pills{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;padding:10px 0;position:sticky;top:66px;z-index:90;background:rgba(243,242,237,.95);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);margin:0 calc(-1 * var(--gap));padding-left:var(--gap);padding-right:var(--gap);margin-bottom:32px}.space-pill{display:inline-flex;align-items:center;gap:6px;padding:10px 22px;border-radius:100px;font-family:var(--fb);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;background:#fff;color:var(--forest);border:2px solid;transition:transform .2s,box-shadow .2s,background .2s}.space-pill:hover{transform:scale(1.05);box-shadow:0 4px 16px rgba(0,0,0,.08)}.space-pill .pill-plus{font-size:15px;font-weight:400;opacity:.5}.sp-field{border-color:var(--apple)}.sp-gym{border-color:var(--sky)}.sp-studio{border-color:#B8A9FF}.sp-flex{border-color:#E4B8FF}.sp-vendor{border-color:#FFD6A5}@keyframes sctagBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}.sc-img.turf .sctag{animation:sctagBob 3s ease-in-out infinite}.sc-img.turf .sctag:nth-child(1){animation-delay:0s}.sc-img.turf .sctag:nth-child(2){animation-delay:.4s}.sc-img.turf .sctag:nth-child(3){animation-delay:.8s}.sc-img.turf .sctag:hover{transform:translateY(-3px) scale(1.05)}:root{--img6:var(--img6);--img8:var(--img8);--img9:var(--img9);}@keyframes glowPulse{0%,100%{box-shadow:0 0 8px rgba(170,235,172,.4),0 0 24px rgba(170,235,172,.2)}50%{box-shadow:0 0 16px rgba(170,235,172,.7),0 0 40px rgba(170,235,172,.35)}}.btn-glow{animation:glowPulse 2s ease-in-out infinite;background:var(--apple);color:var(--forest);font-family:var(--fb);font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:8px 20px;border-radius:100px;border:none;position:absolute;bottom:20px;left:50%;transform:translateX(-50%);z-index:4;cursor:pointer}.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 16px;margin-bottom:24px}.stat-item{display:flex;align-items:center;gap:8px}.stat-check{width:20px;height:20px;border-radius:50%;background:var(--apple);display:flex;align-items:center;justify-content:center;flex-shrink:0}.stat-check svg{width:12px;height:12px}.stat-label{font-family:var(--fb);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--forest)}.thumb-scroll-wrap{height:clamp(200px,22vw,320px);overflow:hidden;position:relative;width:clamp(100px,12vw,160px);border-radius:16px}.thumb-scroll-wrap::before,.thumb-scroll-wrap::after{content:'';position:absolute;left:0;right:0;height:40px;z-index:2;pointer-events:none}.thumb-scroll-wrap::before{top:0;background:linear-gradient(to bottom,#abebac,transparent)}.thumb-scroll-wrap::after{bottom:0;background:linear-gradient(to top,#abebac,transparent)}.thumb-scroll{display:flex;flex-direction:column;gap:12px;animation:thumbScroll 12s linear infinite}@keyframes thumbScroll{0%{transform:translateY(0)}100%{transform:translateY(-50%)}}.thumb-placeholder{width:100%;aspect-ratio:3/4;border-radius:12px;background:rgba(5,49,23,.1);flex-shrink:0}@media(max-width:768px){.thumb-scroll-wrap{display:none}}@keyframes glowPulse{0%,100%{box-shadow:0 0 8px rgba(170,235,172,.4),0 0 20px rgba(170,235,172,.15)}50%{box-shadow:0 0 14px rgba(170,235,172,.6),0 0 32px rgba(170,235,172,.3)}}.now-booking-tab{position:absolute;right:0;top:50%;transform:translateY(-50%);z-index:5;writing-mode:vertical-rl;text-orientation:mixed;background:var(--apple);color:var(--forest);font-family:var(--fb);font-weight:700;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:20px 10px;border-radius:10px 0 0 10px;cursor:pointer;border:none;animation:glowPulse 2.5s ease-in-out infinite;transition:padding .25s,box-shadow .25s}.now-booking-tab:hover{padding:20px 16px}@media(max-width:768px){.space-pills{gap:6px;padding:8px var(--gap);top:66px}.space-pill{padding:7px 14px;font-size:10px;gap:4px;letter-spacing:.04em}.space-pill .pill-plus{font-size:12px}}@media(max-width:480px){.space-pills{gap:5px;padding:6px 12px}.space-pill{padding:6px 12px;font-size:9px}}.price-layout .stat-label{color:#fff}.price-layout .stat-check{background:rgba(255,255,255,.2)}.price-layout .stat-check svg path{stroke:#fff}.rentals-partners{margin-top:clamp(28px,4vw,48px)}.rentals-partners .hero-partners-label{color:rgba(255,255,255,.5)}.rentals-partners .hero-partners-logos{flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:center;gap:32px}#spaces-section{padding-top:clamp(24px,3vw,40px)}.sc-title{animation:titleFloat 4s ease-in-out infinite}@keyframes titleFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}.sc-bg{transition:transform .4s ease}.sc:hover .sc-bg{transform:scale(1.04)}#page-rentals .ph{padding-bottom:clamp(40px,5vw,64px)}.rc{background:#fff;border-radius:24px;overflow:hidden;border:1px solid rgba(5,49,23,.06);margin-bottom:28px;transition:box-shadow .4s}.rc:hover{box-shadow:0 16px 48px rgba(5,49,23,.1)}.rc-hero{position:relative;overflow:hidden}.rc-img{position:relative;width:100%;aspect-ratio:3/1;overflow:hidden}.rc-img .sc-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .6s}.rc:hover .rc-img .sc-bg{transform:scale(1.05)}.rc-overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(to top,rgba(3,14,6,.75) 0%,rgba(3,14,6,.25) 50%,rgba(3,14,6,.15) 100%);z-index:2;padding:24px 24px 20px}.rc-tags{display:flex;gap:8px;flex-wrap:nowrap;margin-top:14px;order:2}.rc-tag{background:rgba(197,251,114,.15);color:#fff;padding:5px 14px;border-radius:100px;font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);transition:all .3s;cursor:default}.rc-tag:hover{background:#c5fb72;color:#111;padding:5px 20px;border-color:rgba(255,255,255,.4)}.rc-title{font-family:var(--fhero);font-size:clamp(28px,4vw,52px);color:#fff;text-transform:uppercase;letter-spacing:.03em;line-height:.95;text-align:center;order:1}.rc-body{padding:clamp(24px,3vw,36px) clamp(24px,3.5vw,48px)}.rc-headline{border-bottom:1px solid rgba(5,49,23,.08);padding-bottom:clamp(16px,2vw,22px);margin-bottom:0}.rc-subtitle{font-family:var(--fh);font-weight:900;font-size:clamp(22px,2.5vw,32px);text-transform:uppercase;letter-spacing:.03em;color:var(--forest);margin-bottom:10px;line-height:1.15}.rc-desc{font-size:15px;color:var(--sage);line-height:1.75;max-width:640px}.rc-section{padding:clamp(14px,1.8vw,20px) 0;border-bottom:1px solid rgba(5,49,23,.06)}.rc-section:last-of-type{border-bottom:none}.rc-section-label{font-family:var(--fb);font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--sage2);margin-bottom:18px}.rc-feats{display:flex;flex-direction:column;gap:0}.rc-feat{padding:12px 0;border-bottom:1px solid rgba(5,49,23,.05);display:flex;flex-direction:column;gap:4px}.rc-feat:last-child{border-bottom:none;padding-bottom:0}.rc-feat:first-child{padding-top:0}.rc-feat strong{font-family:var(--fh);font-size:19px;font-weight:700;color:var(--forest);text-transform:uppercase;letter-spacing:.08em}.rc-feat span{font-size:15px;color:var(--sage);line-height:1.65}.rc-stats{display:grid;grid-template-columns:1fr 1fr;gap:16px 28px;margin-top:6px}.rc-stat{display:flex;align-items:flex-start;gap:12px}.rc-stat-check{width:24px;height:24px;border-radius:50%;background:var(--apple);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}.rc-stat-content{display:flex;flex-direction:column;gap:2px}.rc-stat-title{font-family:var(--fh);font-weight:900;font-size:18px;text-transform:uppercase;letter-spacing:.03em;color:var(--forest);line-height:1.2}.rc-stat-sub{font-size:13px;color:var(--sage);line-height:1.4}.rc-footer{padding-top:clamp(16px,2vw,22px);margin-top:clamp(16px,2vw,22px);border-top:1px solid rgba(5,49,23,.08);display:flex;align-items:center;justify-content:space-between}.rc-btn{text-align:center}.now-booking-tab{position:absolute;right:0;top:50%;transform:translateY(-50%);z-index:5;writing-mode:vertical-rl;background:var(--apple);color:var(--forest);font-family:var(--fb);font-weight:700;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:20px 10px;border-radius:10px 0 0 10px;cursor:pointer;border:none}@media(max-width:768px){.rc-img{aspect-ratio:2.5/1}.rc-stats{grid-template-columns:1fr}.rc-body{padding:28px 20px}.rc-footer{flex-direction:column;gap:16px}}.sched-wrap{overflow-x:auto}.sched-grid{min-width:700px}.sched-header{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;padding-bottom:12px;border-bottom:2px solid var(--apple);margin-bottom:16px}.sched-day-label{font-family:var(--fb);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--forest);text-align:center}.sched-day-off{color:var(--sage2)}.sched-body{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}.sched-col{display:flex;flex-direction:column;gap:8px}.sched-card{border-radius:14px;padding:20px 14px;display:flex;flex-direction:column;justify-content:space-between;min-height:120px}.sched-card:hover{transform:translateY(-3px)}.sc-dark{background:rgba(5,49,23,.18)}.sc-light{background:rgba(170,235,172,.3)}.sc-mint{background:rgba(170,235,172,.5)}.sched-class{font-family:var(--fb);font-size:12px;font-weight:700;color:var(--forest)}.sched-time{font-family:var(--fh);font-weight:900;font-size:14px;color:var(--forest);margin-top:12px}.sched-rest{display:flex;align-items:center;justify-content:center;min-height:120px;font-family:var(--fb);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--sage2);border:1px dashed rgba(5,49,23,.12);border-radius:14px}.rc-toggle{display:inline-flex;align-items:center;gap:6px;background:none;border:1px solid rgba(5,49,23,.12);padding:6px 16px;border-radius:100px;font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--sage);cursor:pointer;margin-top:14px;transition:all .25s}.rc-toggle:hover{border-color:var(--forest);color:var(--forest)}.rc-toggle svg{width:12px;height:12px;transition:transform .3s}.rc-details{transition:max-height .4s ease,opacity .3s ease;overflow:hidden}.rc-details.collapsed{max-height:0!important;opacity:0;padding-top:0!important;padding-bottom:0!important}.rc-details.expanded{opacity:1}.event-scroll-wrap{overflow:hidden;position:relative;max-width:260px;height:220px}.event-scroll-wrap::before,.event-scroll-wrap::after{content:'';position:absolute;left:0;right:0;height:40px;z-index:2;pointer-events:none}.event-scroll-wrap::before{top:0;background:linear-gradient(to bottom,#abebac 0%,transparent 100%)}.event-scroll-wrap::after{bottom:0;background:linear-gradient(to top,#abebac 0%,transparent 100%)}.event-scroll{display:flex;flex-direction:column;gap:10px;animation:eventScroll 18s linear infinite;padding:8px 0}.event-card{display:flex;align-items:center;gap:12px;background:rgba(5,49,23,.08);border-radius:14px;padding:12px 16px;border:1px solid rgba(5,49,23,.08);flex-shrink:0;min-width:240px}.event-card-icon{width:38px;height:38px;border-radius:10px;background:rgba(5,49,23,.06);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}.event-card-info{flex:1;min-width:0}.event-card-title{font-family:var(--fh);font-weight:900;font-size:13px;text-transform:uppercase;letter-spacing:.03em;color:var(--forest);line-height:1.2}.event-card-sub{font-size:11px;color:var(--sage);margin-top:1px}.event-card-date{font-family:var(--fb);font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--sage2);margin-top:2px}.event-card-badge{background:var(--forest);color:#c5fb72;font-family:var(--fb);font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:100px;white-space:nowrap;flex-shrink:0}@keyframes eventScroll{0%{transform:translateY(0)}100%{transform:translateY(-50%)}}@media(max-width:768px){.event-scroll-wrap{display:none}}@media(max-width:768px){#gym-pricing [style*='grid-template-columns:repeat(3']{grid-template-columns:1fr!important}}@media(max-width:480px){.pillars-grid{grid-template-columns:1fr!important;gap:12px}.pillar-card{min-width:0;overflow:hidden}.pillar-icon-wrap{width:64px!important;height:40px!important}.pillar-icon-wrap svg{width:20px!important;height:20px!important}.pillar-name{font-size:18px!important}}.pillar{min-width:0;overflow:hidden;box-sizing:border-box}.ig-scroll-wrap{overflow:hidden;position:relative;width:100%}.ig-scroll{display:flex;gap:12px;animation:igScroll 50s linear infinite;width:max-content}.ig-scroll-item{width:200px;height:200px;border-radius:14px;flex-shrink:0;position:relative;overflow:hidden}@keyframes igScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}@media(max-width:768px){.ig-scroll-item{width:150px;height:150px}}.purpose-pills{display:flex;gap:10px;flex-wrap:wrap}.purpose-pill{padding:12px 24px;border-radius:100px;font-family:var(--fb);font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;cursor:pointer;background:transparent;color:var(--forest);border:2px solid rgba(5,49,23,.15);transition:all .2s}.purpose-pill:hover{border-color:var(--forest);background:rgba(5,49,23,.04)}.purpose-pill.active{background:var(--forest);color:var(--cloud);border-color:var(--forest)}@media(max-width:480px){.purpose-pills{gap:8px}.purpose-pill{padding:10px 18px;font-size:11px}}</style>
+</head>
+<body>
+<div class="mob-menu" id="mobMenu">
+<div class="mob-top">
+<div>
+<img src="images/logo-mobile.svg" alt="Turbo Sports" style="height:32px;width:auto;display:block">
+</div>
+<button class="mob-close" onclick="closeMob()">✕</button>
+</div>
+<nav class="mob-nav">
+<button class="mob-item" onclick="go('home')">Home</button>
+<button class="mob-item" onclick="go('rentals')">Rentals</button>
+<a class="mob-sub-item" href="studio-rentals.html">Rates + Info</a>
+<a class="mob-item" href="programs.html">Programs</a>
+<a href="about.html" class="mob-item">About</a>
+<button class="mob-item" onclick="go('gym')">The Gym</button>
+<button class="mob-item" onclick="go('contact')">Contact</button>
+</nav>
+<div class="mob-foot">
+<div style="display:flex;gap:16px;margin-bottom:16px"><a href="https://instagram.com" target="_blank" style="opacity:.6"><svg viewBox="0 0 24 24" fill="none" style="width:24px;height:24px"><rect x="2" y="2" width="20" height="20" rx="5" stroke="#053117" stroke-width="2"/><circle cx="12" cy="12" r="5" stroke="#053117" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="#053117"/></svg></a><a href="https://facebook.com" target="_blank" style="opacity:.6"><svg viewBox="0 0 24 24" fill="none" style="width:24px;height:24px"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z" stroke="#053117" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+<button class="btn btn-outline btn-w btn-lg" onclick="go('contact')">Contact Us →</button>
+<a href="https://book.squareup.com/classes/pnnrxqd1guvrr6/location/L3A5KKS0TKTCG/classes" target="_blank">
+<button class="btn btn-apple btn-w btn-lg">Book A Class →</button>
+</a>
+</div>
+</div>
+<div class="topbar">
+<span>Facility Pre-Booking Now Live!</span>
+<button class="topbar-btn" onclick="go('rentals')"><svg viewBox="0 0 24 24" fill="none" style="width:12px;height:12px;vertical-align:-1px;margin-right:4px"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z" fill="currentColor"/></svg>Explore Rentals</button>
+</div>
+<header class="nav" id="mainNav">
+<div class="nav-inner">
+<div class="nav-logo" onclick="go('home')">
+<img src="images/logo-mobile.svg" alt="Turbo Sports & Performance" style="height:38px;width:auto;display:block">
+</div>
+<nav class="nav-links">
+<span class="nav-link" id="nl-home" onclick="go('home')">Home</span>
+<div class="nav-drop">
+<span class="nav-link" id="nl-rentals" onclick="go('rentals')">Rentals &#9662;</span>
+<div class="nav-drop-menu">
+<span class="nav-drop-link" onclick="go('rentals')">Rentals Overview</span>
+<a class="nav-drop-link" href="studio-rentals.html">Rates + Info</a>
+</div>
+</div>
+<a class="nav-link" href="programs.html">Programs</a>
+<a href="about.html" class="nav-link">About</a>
+<span class="nav-link" id="nl-gym" onclick="go('gym')">The Gym</span>
+<span class="nav-link" id="nl-contact" onclick="go('contact')">Contact</span>
+</nav>
+<div class="nav-actions">
+<a href="https://book.squareup.com/classes/pnnrxqd1guvrr6/location/L3A5KKS0TKTCG/classes" target="_blank">
+<button class="nav-book">Book A Class →</button>
+</a>
+</div>
+<button class="nav-burger" onclick="openMob()">
+<span></span><span></span><span></span>
+</button>
+</div>
+</header>
+<div id="page-home" class="page active">
+<section class="hero">
+<div class="hero-atmosphere"></div>
+<div class="hero-chevron-wm">
+<img data-imgref="ref1" alt="" style="width:100%;height:auto;display:block">
+</div>
+<div class="hero-content">
+<div class="hero-eyebrow">Coming Fall 2026 · Collingwood, Ontario</div>
+<h1 class="h-xl hero-title">PLAY, TRAIN,<br>CONNECT.</h1>
+<p class="hero-body">From FIFA-certified turf to performance training and multi-use rooms. Turbo gives you the space to play, train, and host — all under one roof.</p>
+<div class="hero-btns">
+<button class="btn btn-ghost-light btn-lg" onclick="go('rentals')">Discover Rates →</button>
+<button class="btn btn-apple btn-lg" onclick="go('contact')">Contact Us →</button>
+</div>
+<div class="hero-partners">
+<p class="hero-partners-label">In Partnership With</p>
+<div class="hero-partners-logos">
+<a href="https://chekinstitute.com/" target="_blank" rel="noopener" style="display:inline-block"><img src="https://cdn.prod.website-files.com/68a651015cf98631562f5e20/691d27c0cb140326c23ae028_FINAL%20(4).png" alt="Chek Institute" class="partner-logo-img" style="height:32px"></a>
+<a href="https://www.vivobarefoot.com/ca/" target="_blank" rel="noopener" style="display:inline-block"><img src="https://cdn.prod.website-files.com/68a651015cf98631562f5e20/6914e78ad95d73ca4ab8f663_Company_Logos%20(2).png" alt="Vivo Barefoot" class="partner-logo-img" style="height:28px"></a>
+<a href="https://www.final3rdsoccer.com/" target="_blank" rel="noopener" style="display:inline-block"><img src="https://cdn.prod.website-files.com/68a651015cf98631562f5e20/691d27546ae56fd24146f312_FINAL%20(1).png" alt="Olway" class="partner-logo-img" style="height:28px"></a>
+<a href="https://www.olwayperformance.com/" target="_blank" rel="noopener" style="display:inline-block"><img src="https://cdn.prod.website-files.com/68a651015cf98631562f5e20/6971308c2722281210590c6d_Untitled%20design.png" alt="Final Third Soccer" class="partner-logo-img" style="height:32px"></a>
+</div>
+</div>
+</div>
+</section>
+<div class="marquee" aria-hidden="true"><div class="marquee-track"><span class="marquee-item">Play</span><span class="marquee-logo"></span><span class="marquee-item">Train</span><span class="marquee-logo"></span><span class="marquee-item">Connect</span><span class="marquee-logo"></span><span class="marquee-item">Partner</span><span class="marquee-logo"></span><span class="marquee-item">Compete</span><span class="marquee-logo"></span><span class="marquee-item">Grow</span><span class="marquee-logo"></span><span class="marquee-item">Play</span><span class="marquee-logo"></span><span class="marquee-item">Train</span><span class="marquee-logo"></span><span class="marquee-item">Connect</span><span class="marquee-logo"></span><span class="marquee-item">Partner</span><span class="marquee-logo"></span><span class="marquee-item">Compete</span><span class="marquee-logo"></span><span class="marquee-item">Grow</span><span class="marquee-logo"></span><span class="marquee-item">Play</span><span class="marquee-logo"></span><span class="marquee-item">Train</span><span class="marquee-logo"></span><span class="marquee-item">Connect</span><span class="marquee-logo"></span><span class="marquee-item">Partner</span><span class="marquee-logo"></span><span class="marquee-item">Compete</span><span class="marquee-logo"></span><span class="marquee-item">Grow</span><span class="marquee-logo"></span><span class="marquee-item">Play</span><span class="marquee-logo"></span><span class="marquee-item">Train</span><span class="marquee-logo"></span><span class="marquee-item">Connect</span><span class="marquee-logo"></span><span class="marquee-item">Partner</span><span class="marquee-logo"></span><span class="marquee-item">Compete</span><span class="marquee-logo"></span><span class="marquee-item">Grow</span><span class="marquee-logo"></span></div></div>
+<section class="sec" id="about" style="background:#F3F2ED">
+<div class="w">
+<div class="welcome-grid">
+<div class="reveal">
+<div class="eyebrow">Welcome To Turbo</div>
+<div class="welcome-tagline">Play.<br>Train.<br><span>Connect.</span></div>
+<p class="body-text lg" style="max-width:440px">Coming in 2026 to Collingwood &amp; The Blue Mountains. Turbo is a community-first high-performance facility that blends elite-level sport, accessible wellness, and youth-focused programs all under one roof.</p>
+</div>
+<div class="pillars-grid">
+<div class="pillar-card reveal reveal-d1" onclick="go('rentals');setTimeout(()=>document.getElementById('space-field').scrollIntoView({behavior:'smooth',block:'center'}),400)">
+<div class="pillar-icon-wrap"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M8 5v14l11-7L8 5z" fill="#053117"/></svg></div>
+<p class="pillar-name">Play</p>
+<p class="pillar-desc">FIFA-certified indoor turf for year-round games and training.</p>
+</div>
+<div class="pillar-card reveal reveal-d2" onclick="go('gym')">
+<div class="pillar-icon-wrap"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="6" height="16" rx="1.5" fill="#053117"/><rect x="14" y="4" width="6" height="16" rx="1.5" fill="#053117"/></svg></div>
+<p class="pillar-name">Train</p>
+<p class="pillar-desc">State-of-the-art performance gym and movement studios.</p>
+</div>
+<div class="pillar-card reveal reveal-d3" onclick="go('contact')">
+<div class="pillar-icon-wrap"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="8" cy="8" r="3.5" stroke="#053117" stroke-width="2"/><circle cx="16" cy="15" r="3.5" stroke="#053117" stroke-width="2"/><path d="M11 9.5L14 13.5" stroke="#053117" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+<p class="pillar-name">Connect</p>
+<p class="pillar-desc">Programs, leagues, and events that bring athletes and families together.</p>
+</div>
+<div class="pillar-card reveal reveal-d4" onclick="go('contact')">
+<div class="pillar-icon-wrap"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6L12 2z" fill="#053117"/></svg></div>
+<p class="pillar-name">Partner</p>
+<p class="pillar-desc">Run programs, host events, or activate your brand in a high-traffic space.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="sec fitness-section" id="fitness">
+<div class="w">
+<div class="fitness-grid">
+<div class="reveal">
+<div class="eyebrow light">Turbo Fitness</div>
+<h2 class="h-lg light" style="margin-bottom:20px">Transform<br>Your Health.</h2>
+<p class="body-text light lg">Whether you're pushing your limits or striving to feel and move at your best, Turbo Fitness is designed to help you unlock your full potential with confidence and clarity.</p>
+<div class="fitness-btns">
+<a href="https://book.squareup.com/classes/pnnrxqd1guvrr6/location/L3A5KKS0TKTCG/classes" target="_blank"><button class="btn btn-apple btn-lg">Book A Class →</button></a>
+<a href="https://calendly.com/justin-turbosportsperformance/30min" target="_blank"><button class="btn btn-ghost-light btn-lg">Get Coaching →</button></a>
+<a href="https://book.squareup.com/classes/pnnrxqd1guvrr6/location/L3A5KKS0TKTCG/classes" target="_blank"><button class="btn btn-ghost-light btn-lg">View Schedule →</button></a>
+</div>
+<div style="margin-top:36px;padding-top:28px;border-top:1px solid rgba(255,255,255,.1)">
+<p style="font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:8px">Currently At</p>
+<p style="font-size:15px;font-weight:600;color:var(--apple)">MVMT Gym — 12 Stewart Rd, Collingwood</p>
+</div>
+</div>
+<div class="fitness-photos reveal reveal-d1">
+<div class="fitness-photo tall"><img src="https://cdn.prod.website-files.com/68a651015cf98631562f5e20/691532db9e2a69002b560f05_C_2.png" alt="Turbo Fitness" loading="lazy"></div>
+<div class="fitness-photo"><img src="https://cdn.prod.website-files.com/68a651015cf98631562f5e20/691532e1021ecb507af30f91_c_3.png" alt="Group training" loading="lazy"></div>
+<div class="fitness-photo"><img src="https://cdn.prod.website-files.com/68a651015cf98631562f5e20/691532d9455094debe51d3b0_C_1.png" alt="Training session" loading="lazy"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="sec bg-cream" id="reset">
+<div class="w">
+<div class="welcome-grid">
+<div class="reveal">
+<div class="eyebrow">2026's Perfect Starter</div>
+<h2 class="h-lg" style="margin-bottom:20px">Shop The<br>Turbo Reset.</h2>
+<p class="body-text lg" style="max-width:440px;margin-bottom:32px">The days where you're tired for no reason. The weeks where meals get chaotic. We made this because we've been there — and so have the people we train.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap">
+<a href="https://checkout.square.site/merchant/MLAJCZKRYN9FZ/checkout/URIOVU3GAQVHGL7S33DJDMHB" target="_blank"><button class="btn btn-forest btn-lg">Shop The Reset →</button></a>
+<a href="https://book.squareup.com/classes/pnnrxqd1guvrr6/location/L3A5KKS0TKTCG/classes" target="_blank"><button class="btn btn-outline btn-lg">Book Turbo Fitness →</button></a>
+</div>
+</div>
+<div class="reveal reveal-d1" style="text-align:center;position:relative;display:inline-block">
+<div style="position:absolute;top:-14px;right:-10px;z-index:3;background:#c5fb72;color:var(--forest);font-family:var(--fb);font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:10px 20px;border-radius:100px;box-shadow:0 4px 16px rgba(0,0,0,.15);transform:rotate(3deg);cursor:pointer;border:none;transition:transform .3s,box-shadow .3s" onmouseenter="this.style.transform='rotate(3deg) translateY(-4px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,.2)'" onmouseleave="this.style.transform='rotate(3deg)';this.style.boxShadow='0 4px 16px rgba(0,0,0,.15)'" onclick="window.open('https://checkout.square.site/merchant/MLAJCZKRYN9FZ/checkout/URIOVU3GAQVHGL7S33DJDMHB','_blank')"><svg viewBox="0 0 24 24" fill="none" style="width:14px;height:14px;vertical-align:-2px;margin-right:6px;display:inline"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" stroke="#053117" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 6h18" stroke="#053117" stroke-width="2" stroke-linecap="round"/><path d="M16 10a4 4 0 01-8 0" stroke="#053117" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>On Sale NOW!</div>
+<img style="border-radius:16px" src="images/sale-promo.jpg" alt="The Turbo Reset" style="width:100%;max-width:480px;height:auto;display:block;border-radius:16px">
+</div>
+</div>
+</div>
+</section>
+<section class="sec bg-white" id="faq">
+<div class="w">
+<div class="faq-layout">
+<div class="reveal">
+<div class="eyebrow">FAQs</div>
+<h2 class="h-lg" style="margin-bottom:20px">Frequently<br>Asked<br>Questions</h2>
+<p class="body-text" style="margin-bottom:32px">Have a question we haven't answered? Reach out and we'll get back to you quickly.</p>
+<button class="btn btn-apple" onclick="go('contact')">Ask Us Anything →</button>
+<button class="btn btn-outline" style="margin-top:12px" onclick="go('contact')">Contact Us →</button>
+</div>
+<div class="faq-list reveal reveal-d1">
+<div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">When Will Turbo Officially Open?<span class="faq-icon">+</span></button><div class="faq-answer">We are scheduled to open in 2026, with the exact timing depending on winter construction conditions. Updates on the official launch date and program rollout will be shared closer to completion.</div></div>
+<div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">Where Is Turbo Located?<span class="faq-icon">+</span></button><div class="faq-answer"><p style="margin-bottom:10px">Currently Turbo is based at <strong>MVMT Gym, 12 Stewart Rd, Collingwood, Ontario.</strong></p><p>Turbo's upcoming facility will be located at <strong>140 Mountain Rd, Collingwood</strong> within the Georgian Bay region, easily accessible from the Blue Mountains and Wasaga Beach.</p></div></div>
+<div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">What Is Turbo Fitness?<span class="faq-icon">+</span></button><div class="faq-answer">Turbo Fitness is our Strength &amp; Performance Program, currently hosted out of our partner gym until our new facility is complete. Turbo Fitness Studio will be launching inside the Turbo Facility in 2026 — a functional lifting gym with industry-leading equipment and performance-based strength classes.</div></div>
+<div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">When Can I Start Booking Turf Rentals?<span class="faq-icon">+</span></button><div class="faq-answer">Turf rental requests are open now for the 2026/2027 season. All requests are submitted through our contact form during the pre-launch period. Inventory is limited — early requests get priority.<div style="margin-top:16px"><button class="btn btn-forest" onclick="event.stopPropagation();go('rentals')">Explore Rentals →</button></div></div></div>
+<div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">What Facilities Will Be Available?<span class="faq-icon">+</span></button>
+<div class="faq-answer">
+<div class="faq-facility-item"><div class="faq-facility-dot"></div><div><div class="faq-facility-name">FIFA Certified Turf Field</div><div class="faq-facility-specs">10,000 SQFT · 140' × 60' · 7v7 or 5v5</div><div class="faq-facility-desc">Modular — splits into two smaller fields for youth, technical sessions, and small-group training.</div></div></div>
+<div class="faq-facility-item"><div class="faq-facility-dot"></div><div><div class="faq-facility-name">Functional Movement Gym</div><div class="faq-facility-specs">2,500 SQFT · Industry Leading Design</div><div class="faq-facility-desc">Connected to the main turf. Equipped for strength, conditioning, and functional movement training.</div></div></div>
+<div class="faq-facility-item"><div class="faq-facility-dot"></div><div><div class="faq-facility-name">Movement Studio</div><div class="faq-facility-specs">1,000 SQFT · Turnkey Studio Design</div><div class="faq-facility-desc">Spring dance floor, mirrors, full movement equipment. Ideal for dance, barre, yoga, pilates, and group fitness.</div></div></div>
+<div class="faq-facility-item"><div class="faq-facility-dot"></div><div><div class="faq-facility-name">Multi Purpose Room</div><div class="faq-facility-specs">600 SQFT · Flexible Space</div><div class="faq-facility-desc">Small classes, workshops, birthday parties, meetings, and team events.</div></div></div>
+<div class="faq-facility-item" style="border:none"><div class="faq-facility-dot"></div><div><div class="faq-facility-name">+ Other Amenities</div><div class="faq-facility-desc">Change rooms · Retail space · Lockers · Viewing decks</div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="sec bg-ink" id="instagram">
+<div class="w">
+<div class="ig-header">
+<div class="reveal">
+<div class="eyebrow light">Follow The Journey</div>
+<h2 class="h-lg light" style="margin-bottom:0">@TurboSports<br>Performance</h2>
+</div>
+<a href="https://www.instagram.com/turbosportsperformancecentre/" target="_blank" class="reveal reveal-d1">
+<button class="btn btn-apple btn-lg">Join Us On Instagram →</button>
+</a>
+</div>
+<div class="ig-grid reveal reveal-d1">
+<div class="ig-tile large"><img src="https://cdn.prod.website-files.com/68a651015cf98631562f5e20/691570d9823a6f49f4a28336_Screenshot%202025-11-12%20at%209.45.30%20PM.png" alt="Turbo" loading="lazy"><a href="https://www.instagram.com/turbosportsperformancecentre/" target="_blank"><div class="ig-tile-overlay"><svg width="28" height="18" viewBox="0 0 88 52" fill="none"><path d="M0 0L22 26L0 52H20L42 26L20 0H0Z" fill="#AAEBAC"/><path d="M23 0L45 26L23 52H43L65 26L43 0H23Z" fill="#6fc472"/><path d="M46 0L68 26L46 52H66L88 26L66 0H46Z" fill="#3d9340"/></svg></div></a></div>
+<div class="ig-tile"><img src="https://cdn.prod.website-files.com/68a651015cf98631562f5e20/691570d6ec4c3965b8c03367_Screenshot%202025-11-12%20at%209.43.44%20PM.png" alt="Turbo" loading="lazy"><a href="https://www.instagram.com/turbosportsperformancecentre/" target="_blank"><div class="ig-tile-overlay"><svg width="28" height="18" viewBox="0 0 88 52" fill="none"><path d="M0 0L22 26L0 52H20L42 26L20 0H0Z" fill="#AAEBAC"/><path d="M23 0L45 26L23 52H43L65 26L43 0H23Z" fill="#6fc472"/><path d="M46 0L68 26L46 52H66L88 26L66 0H46Z" fill="#3d9340"/></svg></div></a></div>
+<div class="ig-tile"><img src="https://cdn.prod.website-files.com/68a651015cf98631562f5e20/691532db9e2a69002b560f05_C_2.png" alt="Turbo Fitness" loading="lazy"><a href="https://www.instagram.com/turbosportsperformancecentre/" target="_blank"><div class="ig-tile-overlay"><svg width="28" height="18" viewBox="0 0 88 52" fill="none"><path d="M0 0L22 26L0 52H20L42 26L20 0H0Z" fill="#AAEBAC"/><path d="M23 0L45 26L23 52H43L65 26L43 0H23Z" fill="#6fc472"/><path d="M46 0L68 26L46 52H66L88 26L66 0H46Z" fill="#3d9340"/></svg></div></a></div>
+<div class="ig-tile"><img src="https://cdn.prod.website-files.com/68a651015cf98631562f5e20/691d298abb225b90e0f5bdea_Screenshot%202025-11-18%20at%206.19.01%20PM.png" alt="Turbo" loading="lazy"><a href="https://www.instagram.com/turbosportsperformancecentre/" target="_blank"><div class="ig-tile-overlay"><svg width="28" height="18" viewBox="0 0 88 52" fill="none"><path d="M0 0L22 26L0 52H20L42 26L20 0H0Z" fill="#AAEBAC"/><path d="M23 0L45 26L23 52H43L65 26L43 0H23Z" fill="#6fc472"/><path d="M46 0L68 26L46 52H66L88 26L66 0H46Z" fill="#3d9340"/></svg></div></a></div>
+<div class="ig-tile"><img src="https://cdn.prod.website-files.com/68a651015cf98631562f5e20/691532f321463261bd68d3da_c_4.png" alt="Turbo class" loading="lazy"><a href="https://www.instagram.com/turbosportsperformancecentre/" target="_blank"><div class="ig-tile-overlay"><svg width="28" height="18" viewBox="0 0 88 52" fill="none"><path d="M0 0L22 26L0 52H20L42 26L20 0H0Z" fill="#AAEBAC"/><path d="M23 0L45 26L23 52H43L65 26L43 0H23Z" fill="#6fc472"/><path d="M46 0L68 26L46 52H66L88 26L66 0H46Z" fill="#3d9340"/></svg></div></a></div>
+</div>
+</div>
+</section>
+<div class="ctaband" style="background:var(--apple)">
+<div class="ctaband-inner">
+<div class="eyebrow" style="color:var(--forest);margin-bottom:12px"><span style="color:var(--forest)">Early Bird Bookings Now Live</span></div>
+<h2 style="color:var(--forest)">Ready To<br>Book Your Space?</h2>
+<div class="ctaband-btns">
+<button class="btn btn-forest btn-lg" onclick="go('rentals')">View All Spaces →</button>
+<button class="btn btn-outline btn-lg" onclick="go('contact')">Contact Us</button>
+</div>
+</div>
+</div>
+</div>
+<div id="page-rentals" class="page">
+<div class="ph">
+<div class="ph-wm"><img data-imgref="ref1" alt="" style="width:100%;height:auto;display:block;opacity:0.9"></div>
+<div class="ph-inner" style="text-align:center;display:flex;flex-direction:column;align-items:center">
+<div class="eyebrow light" style="justify-content:center">Pre-Booking Available Now — Facility Coming Fall 2026</div>
+<h1 class="h-xl" style="margin-bottom:20px;font-size:clamp(36px,5.5vw,72px)">Our Space,<br>Your Games.</h1>
+<p class="body-text light" style="max-width:520px;margin-bottom:36px">FIFA turf, performance studio, flex rooms, and vendor space. Book by the hour or lock in a recurring slot for the season.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+<button class="btn btn-apple btn-lg" onclick="document.getElementById('spaces-section').scrollIntoView({behavior:'smooth'})">View All Spaces →</button>
+<button class="btn btn-ghost-light btn-lg" onclick="go('contact')">Contact Us</button>
+</div>
+<div class="hero-partners rentals-partners">
+<p class="hero-partners-label">In Partnership With</p>
+<div class="hero-partners-logos">
+<a href="https://chekinstitute.com/" target="_blank" rel="noopener" style="display:inline-block"><img src="https://cdn.prod.website-files.com/68a651015cf98631562f5e20/691d27c0cb140326c23ae028_FINAL%20(4).png" alt="Chek Institute" class="partner-logo-img" style="height:32px"></a>
+<a href="https://www.vivobarefoot.com/ca/" target="_blank" rel="noopener" style="display:inline-block"><img src="https://cdn.prod.website-files.com/68a651015cf98631562f5e20/6914e78ad95d73ca4ab8f663_Company_Logos%20(2).png" alt="Vivo Barefoot" class="partner-logo-img" style="height:28px"></a>
+<a href="https://www.final3rdsoccer.com/" target="_blank" rel="noopener" style="display:inline-block"><img src="https://cdn.prod.website-files.com/68a651015cf98631562f5e20/691d27546ae56fd24146f312_FINAL%20(1).png" alt="Olway" class="partner-logo-img" style="height:28px"></a>
+<a href="https://www.olwayperformance.com/" target="_blank" rel="noopener" style="display:inline-block"><img src="https://cdn.prod.website-files.com/68a651015cf98631562f5e20/6971308c2722281210590c6d_Untitled%20design.png" alt="Final Third Soccer" class="partner-logo-img" style="height:32px"></a>
+</div>
+</div>
+
+</div>
+</div>
+<section class="sec bg-cream" id="spaces-section">
+<div class="w">
+<div style="display:grid;grid-template-columns:1fr auto;gap:clamp(32px,5vw,64px);align-items:center;margin-bottom:32px;background:#abebac;border-radius:20px;padding:clamp(28px,4vw,48px)">
+<div>
+<div class="eyebrow" style="color:var(--forest);opacity:.7">Available Spaces</div>
+<h2 class="h-lg" style="margin-bottom:8px;color:var(--forest)">Redefining<br>Flexible Spaces.</h2>
+<p class="body-text" style="max-width:500px;color:var(--sage)">Every space is purpose-built, fully equipped, and available for individual, team, or recurring bookings.</p>
+</div>
+<div class="event-scroll-wrap"><div class="event-scroll"><div class="event-card">
+<div class="event-card-icon">⚽</div>
+<div class="event-card-info">
+<div class="event-card-title">Soccer Camp</div>
+<div class="event-card-sub">U12 Skills Intensive</div>
+<div class="event-card-date">Jun 2025</div>
+</div>
+<div class="event-card-badge">✓ Complete</div>
+</div><div class="event-card">
+<div class="event-card-icon">🧘</div>
+<div class="event-card-info">
+<div class="event-card-title">Yoga Retreat</div>
+<div class="event-card-sub">Weekend Wellness</div>
+<div class="event-card-date">May 2025</div>
+</div>
+<div class="event-card-badge">✓ Complete</div>
+</div><div class="event-card">
+<div class="event-card-icon">🏈</div>
+<div class="event-card-info">
+<div class="event-card-title">Flag Football</div>
+<div class="event-card-sub">Adult League S3</div>
+<div class="event-card-date">Apr 2025</div>
+</div>
+<div class="event-card-badge">✓ Complete</div>
+</div><div class="event-card">
+<div class="event-card-icon">⚽</div>
+<div class="event-card-info">
+<div class="event-card-title">Youth League</div>
+<div class="event-card-sub">Spring Season</div>
+<div class="event-card-date">Mar 2025</div>
+</div>
+<div class="event-card-badge">✓ Complete</div>
+</div><div class="event-card">
+<div class="event-card-icon">🏋️</div>
+<div class="event-card-info">
+<div class="event-card-title">Bootcamp Series</div>
+<div class="event-card-sub">6-Week Program</div>
+<div class="event-card-date">Feb 2025</div>
+</div>
+<div class="event-card-badge">✓ Complete</div>
+</div><div class="event-card">
+<div class="event-card-icon">🤸</div>
+<div class="event-card-info">
+<div class="event-card-title">Dance Workshop</div>
+<div class="event-card-sub">Hip Hop Intensive</div>
+<div class="event-card-date">Jan 2025</div>
+</div>
+<div class="event-card-badge">✓ Complete</div>
+<div class="event-card">
+<div class="event-card-icon">⚽</div>
+<div class="event-card-info">
+<div class="event-card-title">Soccer Camp</div>
+<div class="event-card-sub">U12 Skills Intensive</div>
+<div class="event-card-date">Jun 2025</div>
+</div>
+<div class="event-card-badge">✓ Complete</div>
+</div><div class="event-card">
+<div class="event-card-icon">🧘</div>
+<div class="event-card-info">
+<div class="event-card-title">Yoga Retreat</div>
+<div class="event-card-sub">Weekend Wellness</div>
+<div class="event-card-date">May 2025</div>
+</div>
+<div class="event-card-badge">✓ Complete</div>
+</div><div class="event-card">
+<div class="event-card-icon">🏈</div>
+<div class="event-card-info">
+<div class="event-card-title">Flag Football</div>
+<div class="event-card-sub">Adult League S3</div>
+<div class="event-card-date">Apr 2025</div>
+</div>
+<div class="event-card-badge">✓ Complete</div>
+</div><div class="event-card">
+<div class="event-card-icon">⚽</div>
+<div class="event-card-info">
+<div class="event-card-title">Youth League</div>
+<div class="event-card-sub">Spring Season</div>
+<div class="event-card-date">Mar 2025</div>
+</div>
+<div class="event-card-badge">✓ Complete</div>
+</div><div class="event-card">
+<div class="event-card-icon">🏋️</div>
+<div class="event-card-info">
+<div class="event-card-title">Bootcamp Series</div>
+<div class="event-card-sub">6-Week Program</div>
+<div class="event-card-date">Feb 2025</div>
+</div>
+<div class="event-card-badge">✓ Complete</div>
+</div><div class="event-card">
+<div class="event-card-icon">🤸</div>
+<div class="event-card-info">
+<div class="event-card-title">Dance Workshop</div>
+<div class="event-card-sub">Hip Hop Intensive</div>
+<div class="event-card-date">Jan 2025</div>
+</div>
+<div class="event-card-badge">✓ Complete</div>
+</div></div></div>
+</div>
+</div>
+<div class="space-pills">
+<button class="space-pill sp-field" onclick="document.getElementById('space-field').scrollIntoView({behavior:'smooth',block:'center'})"><span class="pill-plus">+</span> The Field</button>
+<button class="space-pill sp-gym" onclick="document.getElementById('space-gym').scrollIntoView({behavior:'smooth',block:'center'})"><span class="pill-plus">+</span> The Gym</button>
+<button class="space-pill sp-studio" onclick="document.getElementById('space-studio').scrollIntoView({behavior:'smooth',block:'center'})"><span class="pill-plus">+</span> Performance Studio</button>
+<button class="space-pill sp-flex" onclick="document.getElementById('space-flex').scrollIntoView({behavior:'smooth',block:'center'})"><span class="pill-plus">+</span> Flex Spaces</button>
+<button class="space-pill sp-vendor" onclick="document.getElementById('space-vendor').scrollIntoView({behavior:'smooth',block:'center'})"><span class="pill-plus">+</span> Vendors</button>
+<a href="studio-rentals.html" class="space-pill" style="border-color:#c5fb72;background:#c5fb72;color:var(--forest);text-decoration:none">&#9733; Studio &amp; Gym Rates</a>
+</div>
+<div class="rc" id="space-field">
+<div class="rc-hero"><div class="rc-img turf"><div class="sc-bg"></div>
+<div class="rc-overlay"><h2 class="rc-title">THE FIELD</h2><div class="rc-tags"><span class="rc-tag">✓ 10,000 sqft</span><span class="rc-tag">✓ 140' × 60'</span><span class="rc-tag">✓ Modular</span></div></div><button class="now-booking-tab" onclick="go('contact')">Now Booking</button></div></div>
+<div class="rc-body">
+<div class="rc-headline"><h3 class="rc-subtitle">The Region's Only FIFA-Certified Indoor Turf</h3><p class="rc-desc">Whether you need the full field for a match or half a field for training and drills, this professionally built indoor turf is lined, sized, and ready for play. Configurable layouts support both youth and adult formats in a climate-controlled, year-round environment.</p><button class="rc-toggle" onclick="this.parentElement.nextElementSibling.classList.toggle('collapsed');this.querySelector('span').textContent=this.parentElement.nextElementSibling.classList.contains('collapsed')?'View Details':'Less';this.querySelector('svg').style.transform=this.parentElement.nextElementSibling.classList.contains('collapsed')?'rotate(0)':'rotate(180deg)'"><span>Less</span><svg viewBox="0 0 24 24" fill="none" style="transform:rotate(180deg)"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+<div class="rc-details expanded">
+<div class="rc-section"><div class="rc-section-label">What's Included</div><div class="rc-feats"><div class="rc-feat"><strong>Full Field Rental</strong><span>10,000 sq ft match-ready turf for games, leagues, and tournaments.</span></div><div class="rc-feat"><strong>Half Field Rental</strong><span>Available for individuals, coaches, clubs, and programs across multiple sports.</span></div><div class="rc-feat"><strong>Booking Flexibility</strong><span>Available for individuals, coaches, clubs, and programs across multiple sports.</span></div></div></div>
+<div class="rc-section"><div class="rc-section-label">Key Features</div><div class="rc-stats"><div class="rc-stat"><div class="rc-stat-check"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="#053117" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="rc-stat-content"><span class="rc-stat-title">FIFA Certified</span><span class="rc-stat-sub">International-grade playing surface</span></div></div><div class="rc-stat"><div class="rc-stat-check"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="#053117" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="rc-stat-content"><span class="rc-stat-title">Full & Half Field</span><span class="rc-stat-sub">Splits into two independent fields</span></div></div><div class="rc-stat"><div class="rc-stat-check"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="#053117" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="rc-stat-content"><span class="rc-stat-title">Recurring Slots</span><span class="rc-stat-sub">Weekly priority booking available</span></div></div><div class="rc-stat"><div class="rc-stat-check"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="#053117" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="rc-stat-content"><span class="rc-stat-title">Youth Ready</span><span class="rc-stat-sub">Sized for all age groups and levels</span></div></div></div></div>
+</div>
+<div class="rc-footer"><button class="btn btn-apple rc-btn" onclick="go('contact')">Request A Booking →</button></div>
+</div>
+</div>
+<div class="rc" id="space-gym">
+<div class="rc-hero"><div class="rc-img gym"><div class="sc-bg"></div>
+<div class="rc-overlay"><h2 class="rc-title">THE GYM</h2><div class="rc-tags"><span class="rc-tag">✓ Open Gym</span><span class="rc-tag">✓ Personal Training</span></div></div></div></div>
+<div class="rc-body">
+<div class="rc-headline"><h3 class="rc-subtitle">A High-Performance Training Floor For Everyone</h3><p class="rc-desc">A two-level performance gym designed for strength, movement, and conditioning — whether you're training on your own, with a coach, or alongside your kids' programs. Built to support drop-in workouts, team training, and structured programs in one place.</p><button class="rc-toggle" onclick="this.parentElement.nextElementSibling.classList.toggle('collapsed');this.querySelector('span').textContent=this.parentElement.nextElementSibling.classList.contains('collapsed')?'View Details':'Less';this.querySelector('svg').style.transform=this.parentElement.nextElementSibling.classList.contains('collapsed')?'rotate(0)':'rotate(180deg)'"><span>Less</span><svg viewBox="0 0 24 24" fill="none" style="transform:rotate(180deg)"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+<div class="rc-details expanded">
+<div class="rc-section"><div class="rc-section-label">What's Included</div><div class="rc-feats"><div class="rc-feat"><strong>Train While Your Kids Train</strong><span>Parents can hit the gym on-site while kids are in sport programs, practices, or camps.</span></div><div class="rc-feat"><strong>Personal Trainer &amp; Coach Designed</strong><span>One-on-one and small group sessions with certified trainers &amp; industry leaders.</span></div><div class="rc-feat"><strong>True Flex Space</strong><span>Teams can pair field rentals with gym training for complete, efficient sessions.</span></div></div></div>
+<div class="rc-section"><div class="rc-section-label">Key Features</div><div class="rc-stats"><div class="rc-stat"><div class="rc-stat-check"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="#053117" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="rc-stat-content"><span class="rc-stat-title">Full Equipment</span><span class="rc-stat-sub">Premium strength and cardio machines</span></div></div><div class="rc-stat"><div class="rc-stat-check"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="#053117" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="rc-stat-content"><span class="rc-stat-title">Open Floor</span><span class="rc-stat-sub">Dedicated functional training area</span></div></div><div class="rc-stat"><div class="rc-stat-check"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="#053117" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="rc-stat-content"><span class="rc-stat-title">Performance Zone</span><span class="rc-stat-sub">Sport-specific training space</span></div></div><div class="rc-stat"><div class="rc-stat-check"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="#053117" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="rc-stat-content"><span class="rc-stat-title">Day Passes</span><span class="rc-stat-sub">Flexible drop-in available</span></div></div></div></div>
+</div>
+<div class="rc-footer"><button class="btn btn-apple rc-btn" onclick="go('contact')">Request A Booking →</button></div>
+</div>
+</div>
+<div class="rc" id="space-studio">
+<div class="rc-hero"><div class="rc-img studio"><div class="sc-bg"></div>
+<div class="rc-overlay"><h2 class="rc-title">PERFORMANCE STUDIO</h2><div class="rc-tags"><span class="rc-tag">✓ Recurring Bookings</span><span class="rc-tag">✓ Instructor Ready</span></div></div></div></div>
+<div class="rc-body">
+<div class="rc-headline"><h3 class="rc-subtitle">A Performance Studio For Programs — Yours and Ours</h3><p class="rc-desc">Fully equipped performance studio designed for ongoing classes and instructor-led programs. Built to support Turbo programming while giving independent instructors a professional space to run their own schedules without added setup or limitations.</p><button class="rc-toggle" onclick="this.parentElement.nextElementSibling.classList.toggle('collapsed');this.querySelector('span').textContent=this.parentElement.nextElementSibling.classList.contains('collapsed')?'View Details':'Less';this.querySelector('svg').style.transform=this.parentElement.nextElementSibling.classList.contains('collapsed')?'rotate(0)':'rotate(180deg)'"><span>Less</span><svg viewBox="0 0 24 24" fill="none" style="transform:rotate(180deg)"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+<div class="rc-details expanded">
+<div class="rc-section"><div class="rc-section-label">What's Included</div><div class="rc-feats"><div class="rc-feat"><strong>Designed For Classes</strong><span>Mirrored studio with sprung performance flooring and integrated sound.</span></div><div class="rc-feat"><strong>Turnkey, By Design</strong><span>All equipment provided so instructors can focus on teaching, not logistics.</span></div><div class="rc-feat"><strong>Distraction-Free Space</strong><span>Fully enclosed and climate-controlled for uninterrupted sessions.</span></div></div></div>
+<div class="rc-section"><div class="rc-section-label">Key Features</div><div class="rc-stats"><div class="rc-stat"><div class="rc-stat-check"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="#053117" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="rc-stat-content"><span class="rc-stat-title">Mirrored Walls</span><span class="rc-stat-sub">Full wall-to-wall mirrors</span></div></div><div class="rc-stat"><div class="rc-stat-check"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="#053117" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="rc-stat-content"><span class="rc-stat-title">Sprung Floor</span><span class="rc-stat-sub">Professional dance-grade surface</span></div></div><div class="rc-stat"><div class="rc-stat-check"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="#053117" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="rc-stat-content"><span class="rc-stat-title">Sound System</span><span class="rc-stat-sub">Built-in premium audio</span></div></div><div class="rc-stat"><div class="rc-stat-check"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="#053117" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="rc-stat-content"><span class="rc-stat-title">Climate Control</span><span class="rc-stat-sub">Year-round temperature management</span></div></div></div></div>
+</div>
+<div class="rc-footer"><button class="btn btn-apple rc-btn" onclick="go('contact')">Request A Booking →</button></div>
+</div>
+</div>
+<div class="rc" id="space-flex">
+<div class="rc-hero"><div class="rc-img flex"><div class="sc-bg"></div>
+<div class="rc-overlay"><h2 class="rc-title">FLEX STUDIO</h2><div class="rc-tags"><span class="rc-tag">✓ Multi-Use</span><span class="rc-tag">✓ Book By The Hour</span></div></div></div></div>
+<div class="rc-body">
+<div class="rc-headline"><h3 class="rc-subtitle">A Flexible Space For Events &amp; Workshops</h3><p class="rc-desc">Multi-purpose studio designed for classes, workshops, meetings, and events. Fully equipped and easily reconfigured, this space adapts to movement, education, and community use — all without the need for setup or extra rentals.</p><button class="rc-toggle" onclick="this.parentElement.nextElementSibling.classList.toggle('collapsed');this.querySelector('span').textContent=this.parentElement.nextElementSibling.classList.contains('collapsed')?'View Details':'Less';this.querySelector('svg').style.transform=this.parentElement.nextElementSibling.classList.contains('collapsed')?'rotate(0)':'rotate(180deg)'"><span>Less</span><svg viewBox="0 0 24 24" fill="none" style="transform:rotate(180deg)"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+<div class="rc-details expanded">
+<div class="rc-section"><div class="rc-section-label">What's Included</div><div class="rc-feats"><div class="rc-feat"><strong>Classes &amp; Small Groups</strong><span>Ideal for yoga, Pilates, meditation, and instructor-led sessions.</span></div><div class="rc-feat"><strong>Workshops &amp; Education</strong><span>Works for coach education, teacher training, team meetings, and learning-based programs.</span></div><div class="rc-feat"><strong>Event &amp; Community Ready</strong><span>Suitable for birthday parties, private bookings, and small gatherings with tables, chairs, and AV available.</span></div></div></div>
+<div class="rc-section"><div class="rc-section-label">Key Features</div><div class="rc-stats"><div class="rc-stat"><div class="rc-stat-check"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="#053117" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="rc-stat-content"><span class="rc-stat-title">Multi-Use</span><span class="rc-stat-sub">Configurable for any format</span></div></div><div class="rc-stat"><div class="rc-stat-check"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="#053117" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="rc-stat-content"><span class="rc-stat-title">AV Ready</span><span class="rc-stat-sub">Projector, screen, and sound</span></div></div><div class="rc-stat"><div class="rc-stat-check"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="#053117" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="rc-stat-content"><span class="rc-stat-title">Tables &amp; Chairs</span><span class="rc-stat-sub">Flexible seating arrangements</span></div></div><div class="rc-stat"><div class="rc-stat-check"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="#053117" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="rc-stat-content"><span class="rc-stat-title">Hourly Booking</span><span class="rc-stat-sub">Book by the hour or the day</span></div></div></div></div>
+</div>
+<div class="rc-footer"><button class="btn btn-apple rc-btn" onclick="go('contact')">Request A Booking →</button></div>
+</div>
+</div>
+<div class="rc" id="space-vendor">
+<div class="rc-hero"><div class="rc-img vendor"><div class="sc-bg"></div>
+<div class="rc-overlay"><h2 class="rc-title">VENDOR SPACE</h2><div class="rc-tags"><span class="rc-tag">✓ Marketplace</span><span class="rc-tag">✓ High Foot Traffic</span></div></div></div></div>
+<div class="rc-body">
+<div class="rc-headline"><h3 class="rc-subtitle">A Pop-Up Marketplace For Local Businesses</h3><p class="rc-desc">A second-floor vendor space for pop-ups and markets, connecting local businesses with families, athletes, and event-day crowds.</p><button class="rc-toggle" onclick="this.parentElement.nextElementSibling.classList.toggle('collapsed');this.querySelector('span').textContent=this.parentElement.nextElementSibling.classList.contains('collapsed')?'View Details':'Less';this.querySelector('svg').style.transform=this.parentElement.nextElementSibling.classList.contains('collapsed')?'rotate(0)':'rotate(180deg)'"><span>Less</span><svg viewBox="0 0 24 24" fill="none" style="transform:rotate(180deg)"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+<div class="rc-details expanded">
+<div class="rc-section"><div class="rc-section-label">What's Included</div><div class="rc-feats"><div class="rc-feat"><strong>Access To Active Customers</strong><span>Exposure to families, athletes, and spectators during busy programs, events, and weekends.</span></div><div class="rc-feat"><strong>Flexible Pop-Up Use</strong><span>Designed for short-term pop-ups, seasonal markets, and event-based activations.</span></div><div class="rc-feat"><strong>Vendor-Ready Logistics</strong><span>On-site storage and back-of-house support for food, drinks, and physical products.</span></div></div></div>
+<div class="rc-section"><div class="rc-section-label">Key Features</div><div class="rc-stats"><div class="rc-stat"><div class="rc-stat-check"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="#053117" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="rc-stat-content"><span class="rc-stat-title">High Traffic</span><span class="rc-stat-sub">Hundreds of weekly visitors</span></div></div><div class="rc-stat"><div class="rc-stat-check"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="#053117" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="rc-stat-content"><span class="rc-stat-title">Flexible Layout</span><span class="rc-stat-sub">Customize your setup</span></div></div><div class="rc-stat"><div class="rc-stat-check"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="#053117" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="rc-stat-content"><span class="rc-stat-title">Event Access</span><span class="rc-stat-sub">Tie into facility events</span></div></div><div class="rc-stat"><div class="rc-stat-check"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="#053117" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="rc-stat-content"><span class="rc-stat-title">Pop-Up Ready</span><span class="rc-stat-sub">Turnkey vendor infrastructure</span></div></div></div></div>
+</div>
+<div class="rc-footer"><button class="btn btn-apple rc-btn" onclick="go('contact')">Apply For A Space →</button></div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="ctaband" style="background:var(--apple)">
+<div class="ctaband-inner">
+<h2 style="color:var(--forest)">Ready To<br>Lock In Your Slot?</h2>
+<div class="ctaband-btns">
+<button class="btn btn-forest btn-lg" onclick="go('contact')">Contact Us →</button>
+</div>
+</div>
+</div>
+</div>
+<div id="page-gym" class="page">
+<div class="ph">
+<div class="ph-wm"><img data-imgref="ref1" alt="" style="width:100%;height:auto;display:block;opacity:0.9"></div>
+<div class="ph-inner" style="text-align:center;display:flex;flex-direction:column;align-items:center">
+<div class="eyebrow light" style="justify-content:center">Turbo Fitness</div>
+<h1 class="h-xl" style="margin-bottom:20px">The Gym.</h1>
+<p class="body-text light" style="max-width:520px;margin-bottom:36px">Strength, movement, and conditioning. Now at MVMT Gym, coming to the new Turbo facility late 2026.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center"><button class="btn btn-apple btn-lg" onclick="document.getElementById('gym-schedule').scrollIntoView({behavior:'smooth'})">View Schedule →</button><button class="btn btn-ghost-light btn-lg" onclick="go('rentals')">Learn What's Coming →</button></div>
+</div>
+</div>
+<div class="marquee" aria-hidden="true"><div class="marquee-track"><span class="marquee-item">Play</span><span class="marquee-logo"></span><span class="marquee-item">Train</span><span class="marquee-logo"></span><span class="marquee-item">Connect</span><span class="marquee-logo"></span><span class="marquee-item">Partner</span><span class="marquee-logo"></span><span class="marquee-item">Compete</span><span class="marquee-logo"></span><span class="marquee-item">Grow</span><span class="marquee-logo"></span><span class="marquee-item">Play</span><span class="marquee-logo"></span><span class="marquee-item">Train</span><span class="marquee-logo"></span><span class="marquee-item">Connect</span><span class="marquee-logo"></span><span class="marquee-item">Partner</span><span class="marquee-logo"></span><span class="marquee-item">Compete</span><span class="marquee-logo"></span><span class="marquee-item">Grow</span><span class="marquee-logo"></span><span class="marquee-item">Play</span><span class="marquee-logo"></span><span class="marquee-item">Train</span><span class="marquee-logo"></span><span class="marquee-item">Connect</span><span class="marquee-logo"></span><span class="marquee-item">Partner</span><span class="marquee-logo"></span><span class="marquee-item">Compete</span><span class="marquee-logo"></span><span class="marquee-item">Grow</span><span class="marquee-logo"></span><span class="marquee-item">Play</span><span class="marquee-logo"></span><span class="marquee-item">Train</span><span class="marquee-logo"></span><span class="marquee-item">Connect</span><span class="marquee-logo"></span><span class="marquee-item">Partner</span><span class="marquee-logo"></span><span class="marquee-item">Compete</span><span class="marquee-logo"></span><span class="marquee-item">Grow</span><span class="marquee-logo"></span></div></div>
+<section class="sec bg-cream"><div class="w"><div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,80px);align-items:center"><div class="reveal"><div class="eyebrow">Where We Are Now</div><h2 class="h-lg" style="margin-bottom:16px">Currently Training<br>at MVMT Gym.</h2><p class="body-text" style="margin-bottom:24px">All Turbo Strength classes are currently held at MVMT Gym in Collingwood.</p><a href="https://book.squareup.com/classes/pnnrxqd1guvrr6/location/L3A5KKS0TKTCG/classes" target="_blank"><button class="btn btn-apple">Book A Class →</button></a></div><div class="reveal" style="background:var(--forest);border-radius:24px;padding:clamp(40px,5vw,64px);text-align:center"><div style="font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--apple);margin-bottom:10px">Current Location</div><div style="font-family:var(--fh);font-weight:900;font-size:clamp(28px,3.5vw,42px);text-transform:uppercase;color:var(--cloud);margin-bottom:6px;line-height:1">MVMT Gym</div><div style="font-size:13px;color:rgba(255,255,255,.55);margin-bottom:6px">12 Stewart Rd</div><div style="font-size:13px;color:rgba(255,255,255,.4);margin-bottom:24px">Collingwood, Ontario</div><div style="border-top:1px solid rgba(255,255,255,.1);padding-top:20px"><div style="font-size:14px;color:rgba(255,255,255,.65);line-height:1.8">Mon–Fri: 6 AM & 7 AM<br>Tue & Thu: 6 PM<br>Sat: 8 AM</div></div></div></div></div></section><section class="sec bg-cream" style="padding:clamp(40px,5vw,60px) 0;overflow:hidden">
+<div class="w" style="margin-bottom:20px;display:flex;align-items:center;justify-content:space-between">
+<div class="eyebrow" style="margin:0">@TurboSportsPerformance</div>
+<a href="https://instagram.com" target="_blank" style="font-family:var(--fb);font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--forest);opacity:.5">Follow →</a>
+</div>
+<div class="ig-scroll-wrap"><div class="ig-scroll">
+<div class="ig-scroll-item" style="background:url('images/ig-1.jpg') center/cover no-repeat"></div>
+<div class="ig-scroll-item" style="background:url('images/ig-2.jpg') center/cover no-repeat"></div>
+<div class="ig-scroll-item" style="background:url('images/ig-3.jpg') center/cover no-repeat"></div>
+<div class="ig-scroll-item" style="background:url('images/ig-4.jpg') center/cover no-repeat"></div>
+<div class="ig-scroll-item" style="background:url('images/ig-5.jpg') center/cover no-repeat"></div>
+<div class="ig-scroll-item" style="background:url('images/ig-6.jpg') center/cover no-repeat"></div>
+<div class="ig-scroll-item" style="background:url('images/ig-7.jpg') center/cover no-repeat"></div>
+<div class="ig-scroll-item" style="background:url('images/ig-1.jpg') center/cover no-repeat"></div>
+<div class="ig-scroll-item" style="background:url('images/ig-2.jpg') center/cover no-repeat"></div>
+<div class="ig-scroll-item" style="background:url('images/ig-3.jpg') center/cover no-repeat"></div>
+<div class="ig-scroll-item" style="background:url('images/ig-4.jpg') center/cover no-repeat"></div>
+<div class="ig-scroll-item" style="background:url('images/ig-5.jpg') center/cover no-repeat"></div>
+<div class="ig-scroll-item" style="background:url('images/ig-6.jpg') center/cover no-repeat"></div>
+<div class="ig-scroll-item" style="background:url('images/ig-7.jpg') center/cover no-repeat"></div>
+</div></div>
+</section>
+<section class="sec" style="background:#aae8ac"><div class="w"><div style="text-align:center;max-width:700px;margin:0 auto"><div class="eyebrow" style="justify-content:center;color:var(--forest)">— Coming Late 2026 —</div><h2 class="h-lg" style="margin-bottom:16px;color:var(--forest)">A New Home<br>For Turbo Fitness.</h2><p class="body-text" style="margin-bottom:36px;color:var(--forest);opacity:.7">The gym moves in-house — premium equipment, open floor training, sport-specific zones, all under one roof.</p><button class="btn btn-lg" style="background:var(--forest);color:var(--apple)" onclick="go('rentals')">Learn What's Coming →</button></div></div></section>
+<section class="sec bg-cream" id="gym-schedule"><div class="w"><div style="text-align:center;margin-bottom:40px"><div class="eyebrow">Weekly Schedule</div><h2 class="h-lg" style="margin-bottom:8px">Strength With Justin.</h2></div><div class="sched-wrap"><div class="sched-grid"><div class="sched-header"><div class="sched-day-label">Mon</div><div class="sched-day-label">Tue</div><div class="sched-day-label">Wed</div><div class="sched-day-label">Thu</div><div class="sched-day-label">Fri</div><div class="sched-day-label">Sat</div><div class="sched-day-label sched-day-off">Sun</div></div><div class="sched-body"><div class="sched-col"><div class="sched-card sc-dark"><div class="sched-class">Strength Foundations</div><div class="sched-time">6 AM</div></div><div class="sched-card sc-dark"><div class="sched-class">Strength Foundations</div><div class="sched-time">7 AM</div></div></div><div class="sched-col"><div class="sched-card sc-light"><div class="sched-class">Functional Strength</div><div class="sched-time">6 PM</div></div></div><div class="sched-col"><div class="sched-card sc-dark"><div class="sched-class">Strength Foundations</div><div class="sched-time">6 AM</div></div><div class="sched-card sc-dark"><div class="sched-class">Strength Foundations</div><div class="sched-time">7 AM</div></div></div><div class="sched-col"><div class="sched-card sc-light"><div class="sched-class">Functional Strength</div><div class="sched-time">6 PM</div></div></div><div class="sched-col"><div class="sched-card sc-dark"><div class="sched-class">Strength Foundations</div><div class="sched-time">6 AM</div></div><div class="sched-card sc-dark"><div class="sched-class">Strength Foundations</div><div class="sched-time">7 AM</div></div></div><div class="sched-col"><div class="sched-card sc-mint"><div class="sched-class">Functional Strength</div><div class="sched-time">8 AM</div></div></div><div class="sched-col"><div class="sched-rest">Rest Day</div></div></div></div></div><div style="text-align:center;margin-top:36px"><a href="https://book.squareup.com/classes/pnnrxqd1guvrr6/location/L3A5KKS0TKTCG/classes" target="_blank"><button class="btn btn-apple btn-lg">Book A Class →</button></a></div></div></section>
+
+<section class="sec bg-dark" id="gym-pricing">
+<div class="w">
+<div style="text-align:center;margin-bottom:clamp(32px,4vw,48px)">
+<div class="eyebrow light" style="justify-content:center">Membership & Pricing</div>
+<h2 class="h-lg" style="color:var(--cloud);margin-bottom:8px">Train On Your Terms.</h2>
+<p class="body-text light" style="max-width:500px;margin:0 auto">Drop in for a single class or commit to a membership. Flexible options for every schedule and budget.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:960px;margin:0 auto">
+
+<div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:clamp(28px,3vw,40px);display:flex;flex-direction:column">
+<div style="font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--apple);margin-bottom:16px">Drop-In</div>
+<div style="font-family:var(--fh);font-weight:900;font-size:clamp(36px,4vw,48px);color:var(--cloud);line-height:1;margin-bottom:4px">$20</div>
+<div style="font-size:13px;color:rgba(255,255,255,.4);margin-bottom:24px">per class</div>
+<div style="display:flex;flex-direction:column;gap:12px;margin-bottom:auto;padding-bottom:28px">
+<div style="display:flex;align-items:center;gap:8px"><span style="color:var(--apple)"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span style="font-size:13px;color:rgba(255,255,255,.6)">Any single class</span></div>
+<div style="display:flex;align-items:center;gap:8px"><span style="color:var(--apple)"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span style="font-size:13px;color:rgba(255,255,255,.6)">No commitment</span></div>
+<div style="display:flex;align-items:center;gap:8px"><span style="color:var(--apple)"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span style="font-size:13px;color:rgba(255,255,255,.6)">All levels welcome</span></div>
+</div>
+<a href="https://book.squareup.com/classes/pnnrxqd1guvrr6/location/L3A5KKS0TKTCG/classes" target="_blank"><button class="btn btn-ghost-light" style="width:100%">Book A Class →</button></a>
+</div>
+
+<div style="background:var(--apple);border-radius:20px;padding:clamp(28px,3vw,40px);display:flex;flex-direction:column;position:relative;overflow:hidden">
+<div style="position:absolute;top:16px;right:16px;background:var(--forest);color:var(--apple);font-family:var(--fb);font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 12px;border-radius:100px">Most Popular</div>
+<div style="font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--forest);margin-bottom:16px">Unlimited Monthly</div>
+<div style="font-family:var(--fh);font-weight:900;font-size:clamp(36px,4vw,48px);color:var(--forest);line-height:1;margin-bottom:4px">$149</div>
+<div style="font-size:13px;color:rgba(5,49,23,.5);margin-bottom:24px">per month</div>
+<div style="display:flex;flex-direction:column;gap:12px;margin-bottom:auto;padding-bottom:28px">
+<div style="display:flex;align-items:center;gap:8px"><span style="color:var(--forest)"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span style="font-size:13px;color:var(--forest);opacity:.7">Unlimited classes</span></div>
+<div style="display:flex;align-items:center;gap:8px"><span style="color:var(--forest)"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span style="font-size:13px;color:var(--forest);opacity:.7">Priority booking</span></div>
+<div style="display:flex;align-items:center;gap:8px"><span style="color:var(--forest)"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span style="font-size:13px;color:var(--forest);opacity:.7">Cancel anytime</span></div>
+</div>
+<a href="https://square.link/u/9pqWzBV1" target="_blank"><button class="btn btn-forest" style="width:100%;background:var(--forest);color:var(--apple);border-color:var(--forest)">Join Now →</button></a>
+</div>
+
+<div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:clamp(28px,3vw,40px);display:flex;flex-direction:column;position:relative;overflow:hidden">
+<div style="position:absolute;top:16px;right:16px;background:rgba(197,251,114,.15);color:var(--apple);font-family:var(--fb);font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 12px;border-radius:100px;border:1px solid rgba(197,251,114,.2)">Top Value</div>
+<div style="font-family:var(--fb);font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--apple);margin-bottom:16px">10-Class Pass</div>
+<div style="font-family:var(--fh);font-weight:900;font-size:clamp(36px,4vw,48px);color:var(--cloud);line-height:1;margin-bottom:4px">$199</div>
+<div style="font-size:13px;color:rgba(255,255,255,.4);margin-bottom:24px">$19.90 / class</div>
+<div style="display:flex;flex-direction:column;gap:12px;margin-bottom:auto;padding-bottom:28px">
+<div style="display:flex;align-items:center;gap:8px"><span style="color:var(--apple)"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span style="font-size:13px;color:rgba(255,255,255,.6)">10 classes, use anytime</span></div>
+<div style="display:flex;align-items:center;gap:8px"><span style="color:var(--apple)"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span style="font-size:13px;color:rgba(255,255,255,.6)">Shareable with friends</span></div>
+<div style="display:flex;align-items:center;gap:8px"><span style="color:var(--apple)"><svg viewBox="0 0 24 24" fill="none" style="width:13px;height:13px"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span style="font-size:13px;color:rgba(255,255,255,.6)">Never expires</span></div>
+</div>
+<a href="https://square.link/u/MkAWi8nN" target="_blank"><button class="btn btn-ghost-light" style="width:100%">Get Class Pass →</button></a>
+</div>
+
+</div>
+</div>
+</section>
+<section class="ctaband bg-cream" style="border-top:1px solid rgba(5,49,23,.06)"><div class="ctaband-inner w"><h2>Ready To Get Moving?</h2><div class="ctaband-btns"><a href="https://book.squareup.com/classes/pnnrxqd1guvrr6/location/L3A5KKS0TKTCG/classes" target="_blank"><button class="btn btn-apple btn-lg">Book A Class →</button></a></div></div></section>
+</div>
+
+<!-- ========== GYM STICKY BOOK BAR ========== -->
+<div class="gym-book-bar" id="gymBookBar">
+<span class="gym-book-bar-text">Ready to train?</span>
+<a href="https://book.squareup.com/classes/pnnrxqd1guvrr6/location/L3A5KKS0TKTCG/classes" target="_blank"><button class="btn btn-apple">Book A Class →</button></a>
+</div>
+
+<div id="page-contact" class="page">
+<div class="ph">
+<div class="ph-wm"><img data-imgref="ref1" alt="" style="width:100%;height:auto;display:block;opacity:0.9"></div>
+<div class="ph-inner" style="text-align:center;display:flex;flex-direction:column;align-items:center">
+<div class="eyebrow light" style="justify-content:center">Questions &amp; Inquiries</div>
+<h1 class="h-xl" style="margin-bottom:20px">Let's Talk.</h1>
+<p class="body-text light" style="max-width:460px">Whether you're looking to rent a space, join the gym, partner with us, or just have a question — we want to hear from you.</p>
+</div>
+</div>
+<section class="sec bg-cream">
+<div class="w">
+<div class="contact-grid">
+<div class="reveal">
+<div class="eyebrow">Find Us</div>
+<h2 class="h-lg" style="margin-bottom:28px">We're In<br>Collingwood.</h2>
+<div class="contact-info-card">
+<p class="cic-label">Now Open</p>
+<p class="cic-name">MVMT Gym</p>
+<p class="cic-addr">12 Stewart Rd, Collingwood, Ontario<br>Turbo Fitness classes &amp; coaching available now</p>
+</div>
+<div class="contact-info-card light">
+<p class="cic-label">Coming 2026</p>
+<p class="cic-name">140 Mountain Rd</p>
+<p class="cic-addr">Collingwood, Ontario — Georgian Bay Region<br>Accessible from Blue Mountains &amp; Wasaga Beach</p>
+</div>
+<div style="margin-top:28px">
+<p style="font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--ground);margin-bottom:12px">Follow Along</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap">
+<a href="https://www.instagram.com/turbosportsperformancecentre/" target="_blank"><button class="btn btn-apple">Instagram →</button></a>
+<button class="btn btn-outline">Facebook →</button>
+</div>
+</div>
+</div>
+<div class="reveal reveal-d1">
+<div class="eyebrow">Send A Message</div>
+<h2 class="h-md" style="margin-bottom:28px">We'll Get<br>Back To You.</h2>
+<div class="form-field">
+<label class="field-label">Your Name</label>
+<input class="field-input" type="text" placeholder="First &amp; Last Name" id="f-name">
+</div>
+<div class="form-row" style="margin-bottom:16px">
+<div class="form-field" style="margin:0"><label class="field-label">Email Address</label><input class="field-input" type="email" placeholder="you@email.com" id="f-email"></div>
+<div class="form-field" style="margin:0"><label class="field-label">Phone #</label><input class="field-input" type="tel" placeholder="(519) 000-0000" id="f-phone"></div>
+</div>
+<div class="form-field">
+<label class="field-label">I'm Reaching Out About</label>
+<div class="purpose-pills" id="purposePills">
+<button type="button" class="purpose-pill" data-purpose="Rentals" onclick="pickPurpose(this)">Rentals</button>
+<button type="button" class="purpose-pill" data-purpose="Partnerships" onclick="pickPurpose(this)">Partnerships</button>
+<button type="button" class="purpose-pill" data-purpose="Media" onclick="pickPurpose(this)">Media</button>
+<button type="button" class="purpose-pill" data-purpose="General Inquiry" onclick="pickPurpose(this)">Inquiries</button>
+</div>
+</div>
+<div class="form-field">
+<label class="field-label">Message</label>
+<textarea class="field-textarea" placeholder="Tell us what you're looking for..." id="f-message" rows="5"></textarea>
+</div>
+<button class="btn btn-forest btn-lg btn-w" onclick="submitForm()">Send Message →</button>
+<div class="form-success" id="form-success">
+<div class="form-success-title">Message Sent!</div>
+<div class="form-success-body">Thanks for reaching out — we'll get back to you as soon as possible.</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<footer class="site-footer">
+<div class="footer-inner">
+<div class="footer-top">
+<div>
+<div style="margin-bottom:18px">
+<img src="images/logo-footer.svg" alt="Turbo Sports &amp; Performance" style="height:44px;width:auto;display:block;opacity:0.9">
+</div>
+<p class="footer-brand-desc">A community-first, high-performance facility opening in Collingwood &amp; The Blue Mountains in 2026.</p>
+</div>
+<div>
+<p class="footer-col-title">Navigate</p>
+<div class="footer-links">
+<span class="footer-link" onclick="go('home')">Home</span>
+<span class="footer-link" onclick="go('rentals')">Rentals</span>
+<span class="footer-link" onclick="go('gym')">The Gym</span>
+<span class="footer-link" onclick="go('contact')">Contact</span>
+</div>
+</div>
+<div>
+<p class="footer-col-title">Spaces (2026)</p>
+<div class="footer-links">
+<span class="footer-link" onclick="go('rentals')">FIFA Turf Field</span>
+<span class="footer-link" onclick="go('rentals')">Performance Studio</span>
+<span class="footer-link" onclick="go('rentals')">Flex Studio</span>
+<span class="footer-link" onclick="go('rentals')">Vendor Space</span>
+</div>
+</div>
+<div>
+<p class="footer-col-title">Connect</p>
+<div class="footer-links">
+<a class="footer-link" href="https://www.instagram.com/turbosportsperformancecentre/" target="_blank">Instagram</a>
+<a class="footer-link" href="https://www.facebook.com/" target="_blank">Facebook</a>
+<a class="footer-link" href="https://www.youtube.com/" target="_blank">YouTube</a>
+<a class="footer-link" href="https://book.squareup.com/classes/pnnrxqd1guvrr6/location/L3A5KKS0TKTCG/classes" target="_blank">Book A Class</a>
+<a class="footer-link" href="https://checkout.square.site/merchant/MLAJCZKRYN9FZ/checkout/URIOVU3GAQVHGL7S33DJDMHB" target="_blank">Shop Turbo Reset</a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p class="footer-copy">© 2026 Turbo Sports &amp; Performance Centre. All rights reserved.</p>
+<p class="footer-copy">140 Mountain Rd, Collingwood, Ontario · Georgian Bay Region</p>
+</div>
+</div>
+</footer>
+<script>function go(page) {
+document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+const el = document.getElementById('page-' + page);
+if (el) el.classList.add('active');
+document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+const nl = document.getElementById('nl-' + page);
+if (nl) nl.classList.add('active');
+var bar = document.getElementById('gymBookBar');
+if (bar) { if (page === 'gym') { bar.classList.add('visible'); } else { bar.classList.remove('visible'); } }
+closeMob();
+window.scrollTo({ top: 0, behavior: 'smooth' });
+setTimeout(initReveal, 100);
+}
+var hash = window.location.hash.replace('#','');
+if (hash && document.getElementById('page-' + hash)) { go(hash); } else { document.getElementById('nl-home').classList.add('active'); }
+function openMob() {
+document.getElementById('mobMenu').classList.add('open');
+document.body.style.overflow = 'hidden';
+}
+function closeMob() {
+document.getElementById('mobMenu').classList.remove('open');
+document.body.style.overflow = '';
+}
+function toggleFaq(btn) {
+const item = btn.closest('.faq-item');
+const isOpen = item.classList.contains('open');
+document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+if (!isOpen) item.classList.add('open');
+}
+var selectedPurpose = '';
+function pickPurpose(btn) {
+document.querySelectorAll('.purpose-pill').forEach(function(p) { p.classList.remove('active'); });
+btn.classList.add('active');
+selectedPurpose = btn.getAttribute('data-purpose');
+}
+function submitForm() {
+const name = document.getElementById('f-name').value.trim();
+const email = document.getElementById('f-email').value.trim();
+if (!name || !email) { alert('Please fill in your name and email.'); return; }
+if (!selectedPurpose) { alert('Please select what you\'re reaching out about.'); return; }
+document.getElementById('form-success').style.display = 'block';
+document.getElementById('form-success').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+function initReveal() {
+const ro = new IntersectionObserver((entries) => {
+entries.forEach(e => {
+if (e.isIntersecting) { e.target.classList.add('visible'); ro.unobserve(e.target); }
+});
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal:not(.visible)').forEach(el => ro.observe(el));
+}
+initReveal();
+function handleResize() {
+const w = window.innerWidth;
+document.querySelectorAll('.price-layout').forEach(el => {
+el.style.gridTemplateColumns = w < 1100 ? '1fr' : '1fr 2fr';
+});
+document.querySelectorAll('.gym-2col').forEach(el => {
+el.style.gridTemplateColumns = w < 1100 ? '1fr' : '1fr 1fr';
+});
+}
+window.addEventListener('resize', handleResize);
+handleResize();
+// PARALLAX HERO
+function initParallax() {
+ const hero = document.querySelector('#page-home .hero');
+ if (!hero) return;
+ const chevron = hero.querySelector('.hero-chevron-wm');
+ const atmosphere = hero.querySelector('.hero-atmosphere');
+ window.addEventListener('scroll', function() {
+ if (!document.getElementById('page-home').classList.contains('active')) return;
+ const scrollY = window.scrollY;
+ const heroH = hero.offsetHeight;
+ if (scrollY > heroH) return;
+ if (chevron) chevron.style.transform = 'translateY(' + (scrollY * 0.6) + 'px) scale(' + (1 + scrollY * 0.0003) + ')';
+ if (atmosphere) atmosphere.style.transform = 'translateY(' + (scrollY * 0.45) + 'px)'; hero.querySelector('.hero-content').style.transform = 'translateY(' + (scrollY * -0.15) + 'px)'; hero.querySelector('.hero-content').style.opacity = Math.max(0, 1 - scrollY / (heroH * 0.9));
+ }, {passive: true});
+}
+initParallax();
+</script>
+<script>document.querySelectorAll('[data-imgref="ref0"]').forEach(e=>e.src="images/logo-mobile.svg");
+document.querySelectorAll('[data-imgref="ref1"]').forEach(e=>e.src="images/hero-photo.jpg");
+document.querySelectorAll('[data-imgref="ref2"]').forEach(e=>e.src="images/badge.png");
+</script></body>
+</html>

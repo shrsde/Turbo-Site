@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Turbo Sports & Performance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:'BNCyther';src:url('fonts/bncyther.otf') format('opentype');font-weight:normal;font-style:normal;font-display:swap}
+:root{--forest:#053117;--sage:#3B634C;--sage2:#508767;--apple:#AAEBAC;--apple-d:#8FD492;--sky:#6EA3EC;--cloud:#FFFFFF;--cream:#F0EEE6;--card:#E8E5DC;--ink:#030E06;--fhero:'BNCyther',sans-serif;--fh:'Barlow Condensed',sans-serif;--fb:'Barlow',sans-serif;--max:1280px;--gap:clamp(20px,5vw,80px)}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;scroll-behavior:smooth}
+body{font-family:var(--fb);background:var(--cream);color:var(--forest);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+.w{max-width:var(--max);margin:0 auto;padding:0 var(--gap)}
+
+/* ---- NAV ---- */
+.topbar{background:var(--forest);color:var(--cloud);padding:8px var(--gap);text-align:center;font-family:var(--fb);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;line-height:1;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+.nav{position:sticky;top:0;z-index:200;background:var(--cloud);border-bottom:1px solid rgba(5,49,23,.08);height:66px}
+.nav-inner{max-width:var(--max);margin:0 auto;padding:0 var(--gap);height:100%;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-logo{display:flex;align-items:center;gap:10px;cursor:pointer;flex-shrink:0}
+.nav-links{display:flex;align-items:center;gap:2px;flex:1;justify-content:center}
+.nav-link{font-family:var(--fb);font-size:13px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--forest);padding:8px 16px;border-radius:8px;cursor:pointer;opacity:.65;transition:opacity .15s,background .15s;text-decoration:none}
+.nav-link:hover{opacity:1;background:rgba(5,49,23,.05)}
+.nav-link.active{opacity:1;background:rgba(5,49,23,.05)}
+.nav-drop{position:relative}
+.nav-drop-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%);min-width:160px;background:var(--cloud);border:1px solid rgba(5,49,23,.08);border-radius:12px;padding:6px 0;box-shadow:0 8px 24px rgba(0,0,0,.1);opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s;z-index:210}
+.nav-drop:hover .nav-drop-menu{opacity:1;visibility:visible}
+.nav-drop-link{display:block;padding:10px 20px;font-family:var(--fb);font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--forest);transition:background .15s;text-decoration:none;white-space:nowrap}
+.nav-drop-link:hover{background:rgba(5,49,23,.05)}
+.nav-drop-link.active{color:var(--sage2);font-weight:700}
+.nav-actions{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.nav-book{background:var(--apple);color:var(--forest);padding:9px 22px;border-radius:100px;font-family:var(--fb);font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;cursor:pointer;transition:background .15s;border:none}
+.nav-book:hover{background:var(--apple-d)}
+.nav-burger{display:none;flex-direction:column;gap:5px;width:42px;height:42px;border-radius:50%;background:var(--forest);align-items:center;justify-content:center;cursor:pointer;flex-shrink:0}
+.nav-burger span{display:block;width:16px;height:2px;background:var(--cloud);border-radius:2px}
+
+/* ---- MOBILE MENU ---- */
+.mob-menu{display:none;position:fixed;inset:0;z-index:500;background:var(--cloud);flex-direction:column;padding:24px var(--gap) 48px;overflow-y:auto}
+.mob-menu.open{display:flex}
+.mob-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:56px}
+.mob-close{width:42px;height:42px;border-radius:50%;background:rgba(5,49,23,.08);color:var(--forest);font-size:18px;display:flex;align-items:center;justify-content:center;border:none;cursor:pointer}
+.mob-nav{flex:1;display:flex;flex-direction:column;gap:4px}
+.mob-item{font-family:var(--fh);font-weight:900;font-size:clamp(48px,13vw,72px);text-transform:uppercase;letter-spacing:.02em;color:var(--forest);line-height:1.05;cursor:pointer;transition:color .15s;background:none;border:none;text-align:left}
+.mob-item:hover{color:var(--sage)}
+.mob-sub-item{font-family:var(--fb);font-weight:700;font-size:clamp(16px,4vw,20px);text-transform:uppercase;letter-spacing:.08em;color:var(--sage2);padding-left:8px;cursor:pointer;transition:color .15s;text-decoration:none;margin-top:-2px}
+.mob-sub-item:hover{color:var(--forest)}
+.mob-foot{margin-top:40px;padding-top:28px;border-top:1px solid rgba(5,49,23,.08);display:flex;flex-direction:column;gap:16px}
+
+/* ---- BUTTONS ---- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:14px 32px;border-radius:100px;font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;cursor:pointer;border:none;white-space:nowrap;transition:background .18s,border-color .18s,color .18s,transform .1s}
+.btn:active{transform:scale(.97)}
+.btn-lg{padding:17px 40px;font-size:14px}
+.btn-sm{padding:10px 22px;font-size:11px}
+.btn-w{width:100%}
+.btn-apple{background:var(--apple);color:var(--forest)}
+.btn-apple:hover{background:var(--apple-d)}
+.btn-outline{background:transparent;color:var(--forest);border:2px solid var(--forest)}
+.btn-outline:hover{background:var(--forest);color:var(--cloud)}
+.btn-ghost-light{background:transparent;color:var(--cloud);border:2px solid rgba(255,255,255,.4)}
+.btn-ghost-light:hover{border-color:var(--cloud);background:rgba(255,255,255,.08)}
+.btn-forest{background:var(--forest);color:var(--cloud)}
+.btn-forest:hover{background:var(--sage)}
+
+/* ---- TYPOGRAPHY ---- */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--sage2);margin-bottom:16px}
+.eyebrow::before{content:'';width:20px;height:2px;background:var(--apple);border-radius:2px;flex-shrink:0}
+.eyebrow.light{color:var(--apple)}
+.eyebrow.light::before{background:var(--apple)}
+.h-xl{font-family:var(--fhero);font-weight:900;font-size:clamp(32px,5.2vw,68px);line-height:.92;letter-spacing:.03em;text-transform:uppercase;color:var(--cloud)}
+.h-lg{font-family:var(--fh);font-weight:900;font-size:clamp(32px,4.5vw,64px);line-height:.94;letter-spacing:.025em;text-transform:uppercase;color:var(--forest)}
+.h-lg.light{color:var(--cloud)}
+.h-md{font-family:var(--fh);font-weight:900;font-size:clamp(28px,3.2vw,48px);line-height:.95;letter-spacing:.03em;text-transform:uppercase;color:var(--forest)}
+.body-text{font-family:var(--fb);font-size:clamp(14px,1.2vw,17px);line-height:1.72;color:var(--sage)}
+
+/* ---- PAGE HEADER ---- */
+.ph{background:var(--forest);position:relative;overflow:hidden;padding:clamp(72px,9vw,120px) var(--gap) clamp(56px,7vw,96px)}
+.ph::before{content:'';position:absolute;inset:0;background:url("images/bg-overlay.jpg") center/cover no-repeat;pointer-events:none;opacity:.5}
+.ph::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(3,14,6,.55) 0%,rgba(3,14,6,.35) 40%,rgba(5,49,23,.82) 100%);pointer-events:none}
+.ph-inner{max-width:var(--max);margin:0 auto;position:relative;z-index:1;text-align:center}
+.ph-sub{font-size:clamp(15px,1.4vw,18px);line-height:1.65;color:rgba(255,255,255,.55);max-width:560px;margin-top:20px;margin-left:auto;margin-right:auto}
+
+/* ---- SECTIONS ---- */
+.sec{padding:clamp(48px,6vw,80px) 0}
+
+/* ---- MODEL CARDS ---- */
+.model-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(10px,1.2vw,14px)}
+.model-card{border-radius:18px;padding:clamp(20px,2.5vw,28px);display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;aspect-ratio:1/1;justify-content:center;transition:box-shadow .3s,transform .25s;position:relative;overflow:hidden;border:none}
+.model-card:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(0,0,0,.2)}
+.model-card-bg{position:absolute;inset:0;background-size:cover;background-position:center;z-index:0}
+.model-card-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(160deg,rgba(5,49,23,.72) 0%,rgba(3,14,6,.85) 100%)}
+.model-card>*:not(.model-card-bg){position:relative;z-index:1}
+.model-card-icon{width:48px;height:48px;border-radius:14px;background:rgba(255,255,255,.15);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:22px}
+.model-card-title{font-family:var(--fh);font-weight:900;font-size:clamp(15px,1.6vw,20px);text-transform:uppercase;letter-spacing:.05em;color:var(--cloud);line-height:1.1}
+/* card variants */
+.model-card--forest{background:var(--forest)}
+.model-card--apple{background:var(--apple)}
+.model-card--apple .model-card-title{color:var(--forest)}
+.model-card--apple .model-card-icon{background:var(--forest);color:var(--cloud)}
+.model-card--apple .btn-ghost-card{color:var(--forest);border-color:var(--forest)}
+.model-card--apple .btn-ghost-card:hover{background:var(--forest);color:var(--cloud)}
+.btn-ghost-card{background:transparent;color:rgba(255,255,255,.85);border:1.5px solid rgba(255,255,255,.35);padding:8px 18px;border-radius:100px;font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;transition:background .18s,border-color .18s,color .18s}
+.btn-ghost-card:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.6)}
+
+/* ---- LEADERSHIP ---- */
+.leader-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,32px)}
+.leader-card{background:var(--cloud);border-radius:24px;padding:clamp(32px,4vw,48px);border:1px solid rgba(5,49,23,.08);display:flex;flex-direction:column}
+.leader-avatar{width:72px;height:72px;border-radius:50%;background:var(--apple);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-weight:900;font-size:24px;color:var(--forest);margin-bottom:20px;text-transform:uppercase}
+.leader-name{font-family:var(--fh);font-weight:900;font-size:clamp(24px,2.8vw,34px);text-transform:uppercase;letter-spacing:.03em;color:var(--forest);margin-bottom:4px;line-height:1}
+.leader-role{font-family:var(--fb);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sage2);margin-bottom:16px}
+.leader-desc{font-size:15px;line-height:1.72;color:var(--sage);margin-bottom:24px;flex:1}
+
+/* ---- TEAM ---- */
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,24px)}
+.team-card{background:var(--cloud);border-radius:20px;padding:clamp(24px,3vw,36px);border:1px solid rgba(5,49,23,.08);text-align:center;transition:box-shadow .3s,transform .25s}
+.team-card:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(5,49,23,.1)}
+.team-avatar{width:56px;height:56px;border-radius:50%;background:var(--card);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-weight:900;font-size:18px;color:var(--forest);margin:0 auto 16px;text-transform:uppercase}
+.team-name{font-family:var(--fh);font-weight:900;font-size:clamp(18px,2vw,22px);text-transform:uppercase;letter-spacing:.04em;color:var(--forest);margin-bottom:4px;line-height:1.1}
+.team-role{font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sage2);margin-bottom:12px}
+.team-desc{font-size:13px;line-height:1.6;color:var(--sage);margin-bottom:20px}
+
+/* ---- JOIN SECTION ---- */
+.join-sec{background:var(--forest);color:var(--cloud);position:relative;overflow:hidden}
+.join-wrap{position:relative;display:flex;align-items:center;gap:clamp(40px,5vw,72px)}
+.join-copy{flex:1;min-width:0}
+.join-float{flex-shrink:0;width:clamp(280px,28vw,360px);background:rgba(255,255,255,.07);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:clamp(28px,3vw,40px);box-shadow:0 20px 60px rgba(0,0,0,.25)}
+.join-float-title{font-family:var(--fh);font-weight:900;font-size:clamp(16px,1.8vw,20px);text-transform:uppercase;letter-spacing:.06em;color:var(--cloud);margin-bottom:clamp(18px,2vw,24px)}
+.join-values{display:flex;flex-direction:column;gap:14px}
+.join-value{display:flex;align-items:center;gap:12px;font-size:14px;color:rgba(255,255,255,.75);line-height:1.55}
+.join-check{width:24px;height:24px;border-radius:50%;background:var(--apple);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.join-check svg{width:13px;height:13px}
+
+/* ---- CTA BAND ---- */
+.cta-band{padding:clamp(32px,4vw,56px) var(--gap);background:var(--forest)}
+.cta-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap}
+.cta-inner h2{font-family:var(--fh);font-weight:900;font-size:clamp(28px,4vw,52px);text-transform:uppercase;letter-spacing:.02em;line-height:.93;color:var(--cloud)}
+.cta-btns{display:flex;gap:12px;flex-wrap:wrap}
+
+/* ---- FOOTER ---- */
+.site-footer{background:var(--ink);padding:clamp(56px,7vw,96px) var(--gap) 40px}
+.footer-inner{max-width:var(--max);margin:0 auto}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:clamp(32px,4vw,64px);padding-bottom:clamp(40px,5vw,64px);border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:32px}
+.footer-brand-desc{font-size:13px;color:rgba(255,255,255,.42);line-height:1.65;max-width:280px}
+.footer-col-title{font-size:9px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:18px}
+.footer-links{display:flex;flex-direction:column;gap:10px}
+.footer-link{font-size:14px;color:rgba(255,255,255,.5);cursor:pointer;transition:color .15s;text-decoration:none}
+.footer-link:hover{color:var(--apple)}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.footer-copy{font-size:11px;color:rgba(255,255,255,.2)}
+
+/* ---- REVEAL ---- */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:none}
+.reveal-d1{transition-delay:.08s}
+.reveal-d2{transition-delay:.16s}
+.reveal-d3{transition-delay:.24s}
+.reveal-d4{transition-delay:.32s}
+
+/* ---- RESPONSIVE ---- */
+@media(max-width:1100px){
+  .footer-top{grid-template-columns:1fr 1fr}
+  .join-wrap{flex-direction:column;align-items:stretch}
+  .join-float{width:100%}
+  .model-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:768px){
+  .nav-links,.nav-actions{display:none}
+  .nav-burger{display:flex}
+  .model-grid{grid-template-columns:repeat(3,1fr)}
+  .model-card{aspect-ratio:auto;padding:clamp(16px,3vw,22px)}
+  .leader-grid{grid-template-columns:1fr}
+  .team-grid{grid-template-columns:1fr 1fr}
+  .footer-top{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .cta-inner{flex-direction:column;text-align:center}
+}
+@media(max-width:540px){
+  .model-grid{grid-template-columns:repeat(2,1fr)}
+  .model-card{aspect-ratio:auto}
+}
+@media(max-width:480px){
+  .team-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ========== MOBILE MENU ========== -->
+<div class="mob-menu" id="mobMenu">
+<div class="mob-top">
+<div><img src="images/logo-mobile.svg" alt="Turbo Sports" style="height:32px;width:auto;display:block"></div>
+<button class="mob-close" onclick="closeMob()">&#10005;</button>
+</div>
+<nav class="mob-nav">
+<a class="mob-item" href="index.html">Home</a>
+<a class="mob-item" href="index.html">Rentals</a>
+<a class="mob-sub-item" href="studio-rentals.html">Rates + Info</a>
+<a class="mob-item" href="programs.html">Programs</a>
+<a class="mob-item" href="about.html">About</a>
+<a class="mob-item" href="index.html">The Gym</a>
+<a class="mob-item" href="index.html">Contact</a>
+</nav>
+<div class="mob-foot">
+<a href="index.html"><button class="btn btn-outline btn-w btn-lg">Back to Main Site &#8594;</button></a>
+<a href="https://book.squareup.com/classes/pnnrxqd1guvrr6/location/L3A5KKS0TKTCG/classes" target="_blank">
+<button class="btn btn-apple btn-w btn-lg">Book A Class &#8594;</button>
+</a>
+</div>
+</div>
+
+<!-- ========== TOPBAR ========== -->
+<div class="topbar">
+<span>About Turbo Sports &amp; Performance</span>
+</div>
+
+<!-- ========== NAV ========== -->
+<header class="nav" id="mainNav">
+<div class="nav-inner">
+<a class="nav-logo" href="index.html">
+<img src="images/logo-mobile.svg" alt="Turbo Sports &amp; Performance" style="height:38px;width:auto;display:block">
+</a>
+<nav class="nav-links">
+<a class="nav-link" href="index.html">Home</a>
+<div class="nav-drop">
+<a class="nav-link" href="index.html">Rentals &#9662;</a>
+<div class="nav-drop-menu">
+<a class="nav-drop-link" href="index.html">Rentals Overview</a>
+<a class="nav-drop-link" href="studio-rentals.html">Rates + Info</a>
+</div>
+</div>
+<a class="nav-link" href="programs.html">Programs</a>
+<a class="nav-link active" href="about.html">About</a>
+<a class="nav-link" href="index.html">The Gym</a>
+<a class="nav-link" href="index.html">Contact</a>
+</nav>
+<div class="nav-actions">
+<a href="https://book.squareup.com/classes/pnnrxqd1guvrr6/location/L3A5KKS0TKTCG/classes" target="_blank">
+<button class="nav-book">Book A Class &#8594;</button>
+</a>
+</div>
+<button class="nav-burger" onclick="openMob()">
+<span></span><span></span><span></span>
+</button>
+</div>
+</header>
+
+<!-- ========== SECTION 1 — HERO ========== -->
+<div class="ph">
+<div class="ph-inner">
+<div class="eyebrow light">Collingwood &amp; Georgian Bay</div>
+<h1 class="h-xl">About Turbo</h1>
+<p class="ph-sub">Turbo Sports &amp; Performance is a structured indoor training and turf facility serving athletes, families, and clubs across the Georgian Bay region.</p>
+</div>
+</div>
+
+<!-- ========== SECTION 2 — OUR MODEL ========== -->
+<section class="sec">
+<div class="w">
+<div class="eyebrow reveal">What We Do</div>
+<h2 class="h-lg reveal" style="margin-bottom:8px">What Turbo Delivers</h2>
+<p class="body-text reveal" style="margin-bottom:clamp(28px,3.5vw,44px);max-width:600px">Structured programs, competitive play, and facility access &mdash; all under one roof.</p>
+
+<div class="model-grid reveal reveal-d1">
+<div class="model-card">
+<div class="model-card-bg" style="background-image:url('images/bg-studio.jpg')"></div>
+<div class="model-card-icon">&#127939;</div>
+<div class="model-card-title">Training</div>
+<a href="programs.html#training"><button class="btn-ghost-card">Learn More &#8594;</button></a>
+</div>
+<div class="model-card">
+<div class="model-card-bg" style="background-image:url('images/bg-turf.jpg')"></div>
+<div class="model-card-icon">&#127942;</div>
+<div class="model-card-title">Leagues</div>
+<a href="programs.html#leagues"><button class="btn-ghost-card">Learn More &#8594;</button></a>
+</div>
+<div class="model-card">
+<div class="model-card-bg" style="background-image:url('images/bg-turf.jpg')"></div>
+<div class="model-card-icon">&#9978;</div>
+<div class="model-card-title">Camps</div>
+<a href="programs.html#camps"><button class="btn-ghost-card">Learn More &#8594;</button></a>
+</div>
+<div class="model-card">
+<div class="model-card-bg" style="background-image:url('images/bg-flex.jpg')"></div>
+<div class="model-card-icon">&#127968;</div>
+<div class="model-card-title">Rentals</div>
+<a href="index.html"><button class="btn-ghost-card">Learn More &#8594;</button></a>
+</div>
+<div class="model-card">
+<div class="model-card-bg" style="background-image:url('images/bg-vendor.jpg')"></div>
+<div class="model-card-icon">&#129309;</div>
+<div class="model-card-title">Partners</div>
+<a href="programs.html#partners"><button class="btn-ghost-card">Learn More &#8594;</button></a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ========== SECTION 3 — LEADERSHIP ========== -->
+<section class="sec" style="background:var(--cloud)">
+<div class="w">
+<div class="eyebrow reveal">Who We Are</div>
+<h2 class="h-lg reveal" style="margin-bottom:clamp(28px,3.5vw,44px)">Leadership</h2>
+
+<div class="leader-grid">
+<div class="leader-card reveal reveal-d1">
+<div class="leader-avatar">JR</div>
+<h3 class="leader-name">Jessica Robichaud</h3>
+<p class="leader-role">Founder &mdash; Operations &amp; Partnerships</p>
+<p class="leader-desc">Leads facility operations, partnerships, programming structure, and long-term strategy.</p>
+<a href="index.html"><button class="btn btn-outline">Partnership Inquiries &#8594;</button></a>
+</div>
+<div class="leader-card reveal reveal-d2">
+<div class="leader-avatar">JH</div>
+<h3 class="leader-name">Justin Hyde</h3>
+<p class="leader-role">Founder &mdash; Gym &amp; Performance</p>
+<p class="leader-desc">Leads strength, movement, team and athlete development programming inside Turbo. Oversees hiring and mentorship of all fitness and performance staff.</p>
+<a href="programs.html#training"><button class="btn btn-outline">View Training Programs &#8594;</button></a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ========== SECTION 4 — CORE TEAM ========== -->
+<section class="sec">
+<div class="w">
+<div class="eyebrow reveal">The Team</div>
+<h2 class="h-lg reveal" style="margin-bottom:clamp(28px,3.5vw,44px)">Core Team</h2>
+
+<div class="team-grid">
+<div class="team-card reveal reveal-d1">
+<div class="team-avatar">TM</div>
+<h3 class="team-name">Team Member</h3>
+<p class="team-role">Strength &amp; Movement Coach</p>
+<p class="team-desc">Delivers structured group training and youth development sessions.</p>
+<a href="programs.html#training"><button class="btn btn-outline btn-sm">View Class Schedule &#8594;</button></a>
+</div>
+<div class="team-card reveal reveal-d2">
+<div class="team-avatar">TM</div>
+<h3 class="team-name">Team Member</h3>
+<p class="team-role">Strength &amp; Movement Coach</p>
+<p class="team-desc">Delivers structured group training and youth development sessions.</p>
+<a href="programs.html#training"><button class="btn btn-outline btn-sm">View Class Schedule &#8594;</button></a>
+</div>
+<div class="team-card reveal reveal-d3">
+<div class="team-avatar">TM</div>
+<h3 class="team-name">Team Member</h3>
+<p class="team-role">Strength &amp; Movement Coach</p>
+<p class="team-desc">Delivers structured group training and youth development sessions.</p>
+<a href="programs.html#training"><button class="btn btn-outline btn-sm">View Class Schedule &#8594;</button></a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ========== SECTION 5 — JOIN THE TEAM ========== -->
+<section class="sec join-sec">
+<div class="w">
+<div class="join-wrap">
+<div class="join-copy">
+<div class="eyebrow light reveal">Careers</div>
+<h2 class="h-lg light reveal" style="margin-bottom:16px">We Build People First.</h2>
+<p style="font-size:clamp(15px,1.4vw,18px);line-height:1.72;color:rgba(255,255,255,.6);margin-bottom:20px" class="reveal">We don't define our team by credentials or titles. We define our team by character.</p>
+<p style="font-size:clamp(14px,1.2vw,16px);line-height:1.72;color:rgba(255,255,255,.5);margin-bottom:20px" class="reveal">We believe good humans build strong environments. Skills can be developed. Mindset matters first. If you're willing to invest in this culture &mdash; to learn, grow, and contribute &mdash; we invest in you.</p>
+<p style="font-size:clamp(14px,1.2vw,16px);line-height:1.72;color:rgba(255,255,255,.5);margin-bottom:20px" class="reveal">Our mentorship model is structured and paid. You're not paying us to learn here. We compensate you for your time while you develop inside our system.</p>
+<p style="font-size:clamp(14px,1.2vw,16px);line-height:1.72;color:rgba(255,255,255,.5);margin-bottom:32px" class="reveal">You gain real hours, real responsibility, and support within a focused, high-standard team.</p>
+<a href="mailto:info@turbosportsperformance.com"><button class="btn btn-apple btn-lg reveal">Join the Team &#8594;</button></a>
+</div>
+<div class="join-float reveal reveal-d2">
+<div class="join-float-title">What That Means</div>
+<div class="join-values">
+<div class="join-value">
+<div class="join-check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--forest)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<span>Character over ego</span>
+</div>
+<div class="join-value">
+<div class="join-check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--forest)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<span>Growth over status</span>
+</div>
+<div class="join-value">
+<div class="join-check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--forest)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<span>Paid development, not unpaid shadowing</span>
+</div>
+<div class="join-value">
+<div class="join-check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--forest)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<span>Structure and mentorship built in</span>
+</div>
+<div class="join-value">
+<div class="join-check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--forest)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<span>Long-term commitment on both sides</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+<div class="footer-inner">
+<div class="footer-top">
+<div>
+<div style="margin-bottom:18px">
+<img src="images/logo-footer.svg" alt="Turbo Sports &amp; Performance" style="height:44px;width:auto;display:block;opacity:0.9">
+</div>
+<p class="footer-brand-desc">A community-first, high-performance facility opening in Collingwood &amp; The Blue Mountains in 2026.</p>
+</div>
+<div>
+<p class="footer-col-title">Navigate</p>
+<div class="footer-links">
+<a class="footer-link" href="index.html">Home</a>
+<a class="footer-link" href="index.html">Rentals</a>
+<a class="footer-link" href="programs.html">Programs</a>
+<a class="footer-link" href="about.html">About</a>
+<a class="footer-link" href="index.html">The Gym</a>
+<a class="footer-link" href="index.html">Contact</a>
+</div>
+</div>
+<div>
+<p class="footer-col-title">Spaces (2026)</p>
+<div class="footer-links">
+<a class="footer-link" href="index.html">FIFA Turf Field</a>
+<a class="footer-link" href="index.html">Performance Studio</a>
+<a class="footer-link" href="index.html">Flex Studio</a>
+<a class="footer-link" href="index.html">Vendor Space</a>
+</div>
+</div>
+<div>
+<p class="footer-col-title">Connect</p>
+<div class="footer-links">
+<a class="footer-link" href="https://www.instagram.com/turbosportsperformancecentre/" target="_blank">Instagram</a>
+<a class="footer-link" href="https://www.facebook.com/" target="_blank">Facebook</a>
+<a class="footer-link" href="https://www.youtube.com/" target="_blank">YouTube</a>
+<a class="footer-link" href="https://book.squareup.com/classes/pnnrxqd1guvrr6/location/L3A5KKS0TKTCG/classes" target="_blank">Book A Class</a>
+<a class="footer-link" href="https://checkout.square.site/merchant/MLAJCZKRYN9FZ/checkout/URIOVU3GAQVHGL7S33DJDMHB" target="_blank">Shop Turbo Reset</a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p class="footer-copy">&copy; 2026 Turbo Sports &amp; Performance Centre. All rights reserved.</p>
+<p class="footer-copy">140 Mountain Rd, Collingwood, Ontario &middot; Georgian Bay Region</p>
+</div>
+</div>
+</footer>
+
+<script>
+/* ---- MOBILE MENU ---- */
+function openMob() {
+  document.getElementById('mobMenu').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeMob() {
+  document.getElementById('mobMenu').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+/* ---- REVEAL ON SCROLL ---- */
+(function() {
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+})();
+</script>
+</body>
+</html>

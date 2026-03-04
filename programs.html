@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programs & Leagues — Turbo Sports & Performance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:'BNCyther';src:url('fonts/bncyther.otf') format('opentype');font-weight:normal;font-style:normal;font-display:swap}
+:root{--forest:#053117;--sage:#3B634C;--sage2:#508767;--apple:#AAEBAC;--apple-d:#8FD492;--sky:#6EA3EC;--cloud:#FFFFFF;--cream:#F0EEE6;--card:#E8E5DC;--ink:#030E06;--fhero:'BNCyther',sans-serif;--fh:'Barlow Condensed',sans-serif;--fb:'Barlow',sans-serif;--max:1280px;--gap:clamp(20px,5vw,80px)}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;scroll-behavior:smooth}
+body{font-family:var(--fb);background:var(--cream);color:var(--forest);-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-bottom:60px}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+.w{max-width:var(--max);margin:0 auto;padding:0 var(--gap)}
+
+/* ---- NAV ---- */
+.topbar{background:var(--forest);color:var(--cloud);padding:8px var(--gap);text-align:center;font-family:var(--fb);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;line-height:1;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+.nav{position:sticky;top:0;z-index:200;background:var(--cloud);border-bottom:1px solid rgba(5,49,23,.08);height:66px}
+.nav-inner{max-width:var(--max);margin:0 auto;padding:0 var(--gap);height:100%;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-logo{display:flex;align-items:center;gap:10px;cursor:pointer;flex-shrink:0}
+.nav-links{display:flex;align-items:center;gap:2px;flex:1;justify-content:center}
+.nav-link{font-family:var(--fb);font-size:13px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--forest);padding:8px 16px;border-radius:8px;cursor:pointer;opacity:.65;transition:opacity .15s,background .15s;text-decoration:none}
+.nav-link:hover{opacity:1;background:rgba(5,49,23,.05)}
+.nav-link.active{opacity:1;background:rgba(5,49,23,.05)}
+.nav-drop{position:relative}
+.nav-drop-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%);min-width:160px;background:var(--cloud);border:1px solid rgba(5,49,23,.08);border-radius:12px;padding:6px 0;box-shadow:0 8px 24px rgba(0,0,0,.1);opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s;z-index:210}
+.nav-drop:hover .nav-drop-menu{opacity:1;visibility:visible}
+.nav-drop-link{display:block;padding:10px 20px;font-family:var(--fb);font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--forest);transition:background .15s;text-decoration:none;white-space:nowrap}
+.nav-drop-link:hover{background:rgba(5,49,23,.05)}
+.nav-drop-link.active{color:var(--sage2);font-weight:700}
+.nav-actions{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.nav-book{background:var(--apple);color:var(--forest);padding:9px 22px;border-radius:100px;font-family:var(--fb);font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;cursor:pointer;transition:background .15s;border:none}
+.nav-book:hover{background:var(--apple-d)}
+.nav-burger{display:none;flex-direction:column;gap:5px;width:42px;height:42px;border-radius:50%;background:var(--forest);align-items:center;justify-content:center;cursor:pointer;flex-shrink:0}
+.nav-burger span{display:block;width:16px;height:2px;background:var(--cloud);border-radius:2px}
+
+/* ---- MOBILE MENU ---- */
+.mob-menu{display:none;position:fixed;inset:0;z-index:500;background:var(--cloud);flex-direction:column;padding:24px var(--gap) 48px;overflow-y:auto}
+.mob-menu.open{display:flex}
+.mob-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:56px}
+.mob-close{width:42px;height:42px;border-radius:50%;background:rgba(5,49,23,.08);color:var(--forest);font-size:18px;display:flex;align-items:center;justify-content:center;border:none;cursor:pointer}
+.mob-nav{flex:1;display:flex;flex-direction:column;gap:4px}
+.mob-item{font-family:var(--fh);font-weight:900;font-size:clamp(48px,13vw,72px);text-transform:uppercase;letter-spacing:.02em;color:var(--forest);line-height:1.05;cursor:pointer;transition:color .15s;background:none;border:none;text-align:left}
+.mob-item:hover{color:var(--sage)}
+.mob-sub-item{font-family:var(--fb);font-weight:700;font-size:clamp(16px,4vw,20px);text-transform:uppercase;letter-spacing:.08em;color:var(--sage2);padding-left:8px;cursor:pointer;transition:color .15s;text-decoration:none;margin-top:-2px}
+.mob-sub-item:hover{color:var(--forest)}
+.mob-foot{margin-top:40px;padding-top:28px;border-top:1px solid rgba(5,49,23,.08);display:flex;flex-direction:column;gap:16px}
+
+/* ---- BUTTONS ---- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:14px 32px;border-radius:100px;font-family:var(--fb);font-size:13px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;cursor:pointer;border:none;white-space:nowrap;transition:background .18s,border-color .18s,color .18s,transform .1s}
+.btn:active{transform:scale(.97)}
+.btn-lg{padding:17px 40px;font-size:14px}
+.btn-w{width:100%}
+.btn-apple{background:var(--apple);color:var(--forest)}
+.btn-apple:hover{background:var(--apple-d)}
+.btn-outline{background:transparent;color:var(--forest);border:2px solid var(--forest)}
+.btn-outline:hover{background:var(--forest);color:var(--cloud)}
+.btn-ghost-light{background:transparent;color:var(--cloud);border:2px solid rgba(255,255,255,.4)}
+.btn-ghost-light:hover{border-color:var(--cloud);background:rgba(255,255,255,.08)}
+
+/* ---- TYPOGRAPHY ---- */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--sage2);margin-bottom:16px}
+.eyebrow::before{content:'';width:20px;height:2px;background:var(--apple);border-radius:2px;flex-shrink:0}
+.eyebrow.light{color:var(--apple)}
+.eyebrow.light::before{background:var(--apple)}
+.h-xl{font-family:var(--fhero);font-weight:900;font-size:clamp(32px,5.2vw,68px);line-height:.92;letter-spacing:.03em;text-transform:uppercase;color:var(--cloud)}
+.h-lg{font-family:var(--fh);font-weight:900;font-size:clamp(32px,4.5vw,64px);line-height:.94;letter-spacing:.025em;text-transform:uppercase;color:var(--forest)}
+.h-lg.light{color:var(--cloud)}
+.body-text{font-family:var(--fb);font-size:clamp(14px,1.2vw,17px);line-height:1.72;color:var(--sage)}
+
+/* ---- PAGE HEADER ---- */
+.ph{background:var(--forest);position:relative;overflow:hidden;padding:clamp(72px,9vw,120px) var(--gap) clamp(56px,7vw,96px)}
+.ph::before{content:'';position:absolute;inset:0;background:url("images/bg-overlay.jpg") center/cover no-repeat;pointer-events:none;opacity:.5}
+.ph::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(3,14,6,.55) 0%,rgba(3,14,6,.35) 40%,rgba(5,49,23,.82) 100%);pointer-events:none}
+.ph-inner{max-width:var(--max);margin:0 auto;position:relative;z-index:1;text-align:center}
+.ph-sub{font-size:clamp(15px,1.4vw,18px);line-height:1.65;color:rgba(255,255,255,.55);max-width:540px;margin-top:20px;margin-left:auto;margin-right:auto}
+.ph-clarity{font-size:13px;color:rgba(255,255,255,.35);margin-top:20px;font-style:italic;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.6}
+
+/* ---- SECTIONS ---- */
+.sec{padding:clamp(48px,6vw,80px) 0}
+
+/* ---- PROGRAM CARD ---- */
+.prog-card{background:var(--cloud);border-radius:24px;border:1px solid rgba(5,49,23,.08);overflow:hidden;transition:box-shadow .3s}
+.prog-card:hover{box-shadow:0 16px 48px rgba(5,49,23,.1)}
+.prog-card-body{padding:clamp(28px,3.5vw,44px)}
+.prog-card-tag{display:inline-flex;align-items:center;gap:6px;background:rgba(170,235,172,.15);border:1.5px solid var(--apple);color:var(--forest);padding:6px 16px;border-radius:100px;font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px}
+.prog-card-title{font-family:var(--fh);font-weight:900;font-size:clamp(28px,3.5vw,44px);text-transform:uppercase;letter-spacing:.03em;color:var(--forest);margin-bottom:12px;line-height:1}
+.prog-card-desc{font-size:15px;line-height:1.72;color:var(--sage);margin-bottom:24px;max-width:600px}
+.prog-card-schedule{background:var(--cream);border-radius:14px;padding:18px 24px;margin-bottom:28px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.prog-card-schedule-icon{width:40px;height:40px;border-radius:10px;background:var(--apple);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px}
+.prog-card-schedule-text{font-family:var(--fb);font-size:13px;font-weight:600;color:var(--forest);line-height:1.5}
+.prog-card-schedule-text span{display:block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--sage2);margin-bottom:2px}
+.prog-card-btns{display:flex;gap:12px;flex-wrap:wrap}
+
+/* ---- INCLUDES HIGHLIGHT BAR ---- */
+.prog-includes-bar{background:var(--apple);border-radius:16px;padding:clamp(20px,2.5vw,28px) clamp(20px,3vw,32px);margin-bottom:28px}
+.prog-includes-bar-title{font-family:var(--fh);font-weight:900;font-size:14px;text-transform:uppercase;letter-spacing:.1em;color:var(--forest);margin-bottom:14px}
+.prog-includes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px 24px}
+.prog-includes-item{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--forest);line-height:1.45;font-weight:500}
+.prog-includes-check{width:20px;height:20px;border-radius:50%;background:var(--forest);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.prog-includes-check svg{width:11px;height:11px}
+
+/* ---- DETAIL TABLE ---- */
+.prog-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-bottom:28px}
+.prog-detail-item{display:flex;align-items:flex-start;gap:12px;padding:14px 0;border-bottom:1px solid rgba(5,49,23,.06)}
+.prog-detail-icon{font-size:16px;flex-shrink:0;width:24px;text-align:center;line-height:1.4}
+.prog-detail-label{font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sage2);margin-bottom:2px}
+.prog-detail-value{font-size:14px;color:var(--forest);font-weight:600;line-height:1.5}
+
+/* ---- PARTNER CARD ---- */
+.partner-card{background:var(--cloud);border-radius:24px;border:1px solid rgba(5,49,23,.08);overflow:hidden;transition:box-shadow .3s}
+.partner-card:hover{box-shadow:0 16px 48px rgba(5,49,23,.1)}
+.partner-card-body{padding:clamp(28px,3.5vw,44px)}
+.partner-card-type{display:inline-flex;align-items:center;gap:6px;background:rgba(110,163,236,.12);border:1.5px solid var(--sky);color:var(--forest);padding:6px 16px;border-radius:100px;font-family:var(--fb);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px}
+.partner-card-org{font-family:var(--fh);font-weight:900;font-size:clamp(28px,3.5vw,44px);text-transform:uppercase;letter-spacing:.03em;color:var(--forest);margin-bottom:6px;line-height:1}
+.partner-card-label{font-family:var(--fb);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--sage2);margin-bottom:16px}
+.partner-card-desc{font-size:15px;line-height:1.72;color:var(--sage);margin-bottom:28px;max-width:600px}
+.partner-card-btns{display:flex;gap:12px;flex-wrap:wrap}
+
+/* ---- STICKY BOOK BAR ---- */
+.book-bar{position:fixed;bottom:0;left:0;right:0;z-index:300;background:var(--forest);padding:12px var(--gap);display:flex;align-items:center;justify-content:center;gap:16px;box-shadow:0 -4px 24px rgba(0,0,0,.2)}
+.book-bar-text{font-family:var(--fh);font-weight:800;font-size:clamp(14px,1.6vw,18px);text-transform:uppercase;letter-spacing:.06em;color:var(--cloud)}
+.book-bar .btn{padding:10px 28px;font-size:12px}
+
+/* ---- CTA BAND ---- */
+.cta-band{padding:clamp(32px,4vw,56px) var(--gap);background:var(--forest)}
+.cta-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap}
+.cta-inner h2{font-family:var(--fh);font-weight:900;font-size:clamp(28px,4vw,52px);text-transform:uppercase;letter-spacing:.02em;line-height:.93;color:var(--cloud)}
+.cta-btns{display:flex;gap:12px;flex-wrap:wrap}
+
+/* ---- FOOTER ---- */
+.site-footer{background:var(--ink);padding:clamp(56px,7vw,96px) var(--gap) 40px}
+.footer-inner{max-width:var(--max);margin:0 auto}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:clamp(32px,4vw,64px);padding-bottom:clamp(40px,5vw,64px);border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:32px}
+.footer-brand-desc{font-size:13px;color:rgba(255,255,255,.42);line-height:1.65;max-width:280px}
+.footer-col-title{font-size:9px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.28);margin-bottom:18px}
+.footer-links{display:flex;flex-direction:column;gap:10px}
+.footer-link{font-size:14px;color:rgba(255,255,255,.5);cursor:pointer;transition:color .15s;text-decoration:none}
+.footer-link:hover{color:var(--apple)}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.footer-copy{font-size:11px;color:rgba(255,255,255,.2)}
+
+/* ---- REVEAL ---- */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:none}
+.reveal-d1{transition-delay:.08s}
+.reveal-d2{transition-delay:.16s}
+.reveal-d3{transition-delay:.24s}
+
+/* ---- RESPONSIVE ---- */
+@media(max-width:1100px){
+  .footer-top{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .nav-links,.nav-actions{display:none}
+  .nav-burger{display:flex}
+  .footer-top{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .cta-inner{flex-direction:column;text-align:center}
+  .prog-card-btns,.partner-card-btns{flex-direction:column}
+  .prog-card-btns .btn,.partner-card-btns .btn{width:100%}
+  .prog-includes-grid{grid-template-columns:1fr 1fr}
+  .prog-detail-grid{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .prog-includes-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ========== MOBILE MENU ========== -->
+<div class="mob-menu" id="mobMenu">
+<div class="mob-top">
+<div><img src="images/logo-mobile.svg" alt="Turbo Sports" style="height:32px;width:auto;display:block"></div>
+<button class="mob-close" onclick="closeMob()">&#10005;</button>
+</div>
+<nav class="mob-nav">
+<a class="mob-item" href="index.html">Home</a>
+<a class="mob-item" href="index.html">Rentals</a>
+<a class="mob-sub-item" href="studio-rentals.html">Rates + Info</a>
+<a class="mob-item" href="programs.html">Programs</a>
+<a class="mob-item" href="about.html">About</a>
+<a class="mob-item" href="index.html">The Gym</a>
+<a class="mob-item" href="index.html">Contact</a>
+</nav>
+<div class="mob-foot">
+<a href="index.html"><button class="btn btn-outline btn-w btn-lg">Back to Main Site &#8594;</button></a>
+<a href="https://book.squareup.com/classes/pnnrxqd1guvrr6/location/L3A5KKS0TKTCG/classes" target="_blank">
+<button class="btn btn-apple btn-w btn-lg">Book A Class &#8594;</button>
+</a>
+</div>
+</div>
+
+<!-- ========== TOPBAR ========== -->
+<div class="topbar">
+<span>Programs &amp; Leagues &mdash; Turbo Sports &amp; Performance</span>
+</div>
+
+<!-- ========== NAV ========== -->
+<header class="nav" id="mainNav">
+<div class="nav-inner">
+<a class="nav-logo" href="index.html">
+<img src="images/logo-mobile.svg" alt="Turbo Sports &amp; Performance" style="height:38px;width:auto;display:block">
+</a>
+<nav class="nav-links">
+<a class="nav-link" href="index.html">Home</a>
+<div class="nav-drop">
+<a class="nav-link" href="index.html">Rentals &#9662;</a>
+<div class="nav-drop-menu">
+<a class="nav-drop-link" href="index.html">Rentals Overview</a>
+<a class="nav-drop-link" href="studio-rentals.html">Rates + Info</a>
+</div>
+</div>
+<a class="nav-link active" href="programs.html">Programs</a>
+<a class="nav-link" href="about.html">About</a>
+<a class="nav-link" href="index.html">The Gym</a>
+<a class="nav-link" href="index.html">Contact</a>
+</nav>
+<div class="nav-actions">
+<a href="https://book.squareup.com/classes/pnnrxqd1guvrr6/location/L3A5KKS0TKTCG/classes" target="_blank">
+<button class="nav-book">Book A Class &#8594;</button>
+</a>
+</div>
+<button class="nav-burger" onclick="openMob()">
+<span></span><span></span><span></span>
+</button>
+</div>
+</header>
+
+<!-- ========== HERO ========== -->
+<div class="ph">
+<div class="ph-inner">
+<div class="eyebrow light">Turbo Sports &amp; Performance</div>
+<h1 class="h-xl">Programs<br>&amp; Leagues</h1>
+<p class="ph-sub">All programming inside Turbo operates under one of two models &mdash; Turbo-run or Partner-run.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:32px">
+<a href="#turbo"><button class="btn btn-apple btn-lg">Turbo Programs &#8594;</button></a>
+<a href="#partners"><button class="btn btn-ghost-light btn-lg">Partner Programs &#8594;</button></a>
+</div>
+<p class="ph-clarity">Turbo-run programs are delivered by our internal team. Partner programs are independently operated within the facility.</p>
+</div>
+</div>
+
+<!-- ========== TURBO PROGRAMS ========== -->
+<section class="sec" id="turbo">
+<div class="w">
+
+<div class="eyebrow reveal">Internal Programming</div>
+<h2 class="h-lg reveal" style="margin-bottom:8px">Turbo Programs</h2>
+<p class="body-text reveal" style="margin-bottom:clamp(28px,3.5vw,44px);max-width:560px">Coach-led training and league programming delivered by Turbo's internal team.</p>
+
+<div class="prog-card reveal reveal-d1">
+<div class="prog-card-body">
+<div class="prog-card-tag">Ages 2&ndash;4 &middot; 24 Spots Only</div>
+<h3 class="prog-card-title">Turbo Tots</h3>
+<p class="prog-card-desc">Play-based movement and early soccer development in a structured, supportive environment.</p>
+
+<div class="prog-includes-bar">
+<div class="prog-includes-bar-title">What's Included</div>
+<div class="prog-includes-grid">
+<div class="prog-includes-item"><div class="prog-includes-check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--cloud)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>4 weekly, 45-minute outdoor sessions</span></div>
+<div class="prog-includes-item"><div class="prog-includes-check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--cloud)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Play-based soccer activities and movement games</span></div>
+<div class="prog-includes-item"><div class="prog-includes-check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--cloud)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Focus on coordination, teamwork, and fun</span></div>
+<div class="prog-includes-item"><div class="prog-includes-check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--cloud)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>All equipment provided</span></div>
+<div class="prog-includes-item"><div class="prog-includes-check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="var(--cloud)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Group setting with experienced, encouraging coaches</span></div>
+</div>
+</div>
+
+<div class="prog-detail-grid">
+<div class="prog-detail-item">
+<div class="prog-detail-icon">&#128197;</div>
+<div><div class="prog-detail-label">Day</div><div class="prog-detail-value">Wednesdays, June 3 &ndash; June 24</div></div>
+</div>
+<div class="prog-detail-item">
+<div class="prog-detail-icon">&#9200;</div>
+<div><div class="prog-detail-label">Time</div><div class="prog-detail-value">5:00 &ndash; 5:45 PM (45 min sessions)</div></div>
+</div>
+<div class="prog-detail-item">
+<div class="prog-detail-icon">&#127991;</div>
+<div><div class="prog-detail-label">Price</div><div class="prog-detail-value">$120 + HST for the program</div></div>
+</div>
+<div class="prog-detail-item">
+<div class="prog-detail-icon">&#128205;</div>
+<div><div class="prog-detail-label">Location</div><div class="prog-detail-value">Fisher Fields, Field 8<br>3057 Concession 10 N Nottawasaga Rd, Collingwood</div></div>
+</div>
+<div class="prog-detail-item">
+<div class="prog-detail-icon">&#128483;</div>
+<div><div class="prog-detail-label">Spots</div><div class="prog-detail-value">24 spots available</div></div>
+</div>
+</div>
+
+<div class="prog-card-btns">
+<a href="https://checkout.square.site/merchant/MLAJCZKRYN9FZ/checkout/EJHYSCNN7F6DHLE266G7EQB5" target="_blank"><button class="btn btn-apple">Register Now &#8594;</button></a>
+<a href="index.html#contact"><button class="btn btn-outline">Contact Us &#8594;</button></a>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- ========== PARTNER PROGRAMS ========== -->
+<section class="sec" id="partners" style="background:var(--cloud)">
+<div class="w">
+
+<div class="eyebrow reveal">Approved Partners</div>
+<h2 class="h-lg reveal" style="margin-bottom:8px">Partner Programs<br>at Turbo</h2>
+<p class="body-text reveal" style="margin-bottom:clamp(28px,3.5vw,44px);max-width:560px">Independent organizations operating inside Turbo under approved partnership standards.</p>
+
+<div class="partner-card reveal reveal-d1">
+<div class="partner-card-body">
+<div class="partner-card-type">Competitive Soccer Development</div>
+<h3 class="partner-card-org">Final Third Soccer</h3>
+<p class="partner-card-label">Partner Organization</p>
+<p class="partner-card-desc">Final Third delivers technical and competitive soccer programming inside Turbo, serving youth athletes focused on skill progression and structured development. All programming is operated and managed by Final Third.</p>
+<div class="partner-card-btns">
+<a href="https://www.finalthirdsoccer.com" target="_blank"><button class="btn btn-apple">Visit Final Third Programs &#8594;</button></a>
+<a href="index.html#contact"><button class="btn btn-outline">Contact Final Third &#8594;</button></a>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- ========== CTA ========== -->
+<div class="cta-band">
+<div class="cta-inner">
+<h2>Want to run a program<br>at Turbo?</h2>
+<div class="cta-btns">
+<a href="index.html#contact"><button class="btn btn-apple btn-lg">Get In Touch &#8594;</button></a>
+<a href="index.html#rentals"><button class="btn btn-ghost-light btn-lg">View All Spaces &#8594;</button></a>
+</div>
+</div>
+</div>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+<div class="footer-inner">
+<div class="footer-top">
+<div>
+<div style="margin-bottom:18px">
+<img src="images/logo-footer.svg" alt="Turbo Sports &amp; Performance" style="height:44px;width:auto;display:block;opacity:0.9">
+</div>
+<p class="footer-brand-desc">A community-first, high-performance facility opening in Collingwood &amp; The Blue Mountains in 2026.</p>
+</div>
+<div>
+<p class="footer-col-title">Navigate</p>
+<div class="footer-links">
+<a class="footer-link" href="index.html">Home</a>
+<a class="footer-link" href="index.html">Rentals</a>
+<a class="footer-link" href="programs.html">Programs</a>
+<a class="footer-link" href="index.html">The Gym</a>
+<a class="footer-link" href="index.html">Contact</a>
+</div>
+</div>
+<div>
+<p class="footer-col-title">Spaces (2026)</p>
+<div class="footer-links">
+<a class="footer-link" href="index.html">FIFA Turf Field</a>
+<a class="footer-link" href="index.html">Performance Studio</a>
+<a class="footer-link" href="index.html">Flex Studio</a>
+<a class="footer-link" href="index.html">Vendor Space</a>
+</div>
+</div>
+<div>
+<p class="footer-col-title">Connect</p>
+<div class="footer-links">
+<a class="footer-link" href="https://www.instagram.com/turbosportsperformancecentre/" target="_blank">Instagram</a>
+<a class="footer-link" href="https://www.facebook.com/" target="_blank">Facebook</a>
+<a class="footer-link" href="https://www.youtube.com/" target="_blank">YouTube</a>
+<a class="footer-link" href="https://book.squareup.com/classes/pnnrxqd1guvrr6/location/L3A5KKS0TKTCG/classes" target="_blank">Book A Class</a>
+<a class="footer-link" href="https://checkout.square.site/merchant/MLAJCZKRYN9FZ/checkout/URIOVU3GAQVHGL7S33DJDMHB" target="_blank">Shop Turbo Reset</a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p class="footer-copy">&copy; 2026 Turbo Sports &amp; Performance Centre. All rights reserved.</p>
+<p class="footer-copy">140 Mountain Rd, Collingwood, Ontario &middot; Georgian Bay Region</p>
+</div>
+</div>
+</footer>
+
+<!-- ========== STICKY BOOK BAR ========== -->
+<div class="book-bar">
+<span class="book-bar-text">Register for Turbo Tots</span>
+<a href="https://checkout.square.site/merchant/MLAJCZKRYN9FZ/checkout/EJHYSCNN7F6DHLE266G7EQB5" target="_blank"><button class="btn btn-apple">Register Now &#8594;</button></a>
+</div>
+
+<script>
+/* ---- MOBILE MENU ---- */
+function openMob() {
+  document.getElementById('mobMenu').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeMob() {
+  document.getElementById('mobMenu').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+/* ---- REVEAL ON SCROLL ---- */
+(function() {
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+})();
+</script>
+</body>
+</html>
